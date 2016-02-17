@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  XFBaiSiBuDeJie
+//
+//  Created by 谢飞 on 16/2/17.
+//  Copyright © 2016年 谢飞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#import "UIView+Extension.h"
+
+#endif /* PrefixHeader_pch */
