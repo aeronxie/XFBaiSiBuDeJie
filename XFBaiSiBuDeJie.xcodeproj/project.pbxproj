@@ -19,6 +19,13 @@
 		65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA761D1C74C1A70017DB20 /* AppDelegate.m */; };
 		65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76221C74C2010017DB20 /* XFTabBar.m */; };
 		65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76291C74C54E0017DB20 /* UIView+Extension.m */; };
+		65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA762D1C75D7470017DB20 /* XFNavigationController.m */; };
+		65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76301C760B790017DB20 /* XFRecommendViewController.m */; };
+		65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76311C760B790017DB20 /* XFRecommendViewController.xib */; };
+		65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */; };
+		65EA76391C7615480017DB20 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76381C7615480017DB20 /* HttpTool.m */; };
+		65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */; };
+		65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763E1C761FD10017DB20 /* XFCategoryModel.m */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +53,18 @@
 		65EA76281C74C54E0017DB20 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		65EA76291C74C54E0017DB20 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		65EA762B1C74C5840017DB20 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65EA762C1C75D7470017DB20 /* XFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFNavigationController.h; path = ../../../../Documents/XFNavigationController.h; sourceTree = "<group>"; };
+		65EA762D1C75D7470017DB20 /* XFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFNavigationController.m; path = ../../../../Documents/XFNavigationController.m; sourceTree = "<group>"; };
+		65EA762F1C760B790017DB20 /* XFRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFRecommendViewController.h; path = ../../../../../Documents/XFRecommendViewController.h; sourceTree = "<group>"; };
+		65EA76301C760B790017DB20 /* XFRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFRecommendViewController.m; path = ../../../../../Documents/XFRecommendViewController.m; sourceTree = "<group>"; };
+		65EA76311C760B790017DB20 /* XFRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFRecommendViewController.xib; path = ../../../../../Documents/XFRecommendViewController.xib; sourceTree = "<group>"; };
+		65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFConcernViewController.xib; path = ../../../../../Documents/XFConcernViewController.xib; sourceTree = "<group>"; };
+		65EA76371C7615480017DB20 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpTool.h; path = ../../../../Documents/HttpTool.h; sourceTree = "<group>"; };
+		65EA76381C7615480017DB20 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpTool.m; path = ../../../../Documents/HttpTool.m; sourceTree = "<group>"; };
+		65EA763A1C761B0B0017DB20 /* XFRcommandDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFRcommandDataTool.h; path = ../../../../../Documents/XFRcommandDataTool.h; sourceTree = "<group>"; };
+		65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFRcommandDataTool.m; path = ../../../../../Documents/XFRcommandDataTool.m; sourceTree = "<group>"; };
+		65EA763D1C761FD10017DB20 /* XFCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFCategoryModel.h; path = ../../../../../Documents/XFCategoryModel.h; sourceTree = "<group>"; };
+		65EA763E1C761FD10017DB20 /* XFCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFCategoryModel.m; path = ../../../../../Documents/XFCategoryModel.m; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF97E68F796933B40822AB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +140,7 @@
 				65EA76051C74C18A0017DB20 /* Latest */,
 				65EA760C1C74C18A0017DB20 /* Main */,
 				65EA760F1C74C18A0017DB20 /* Me */,
+				65EA76361C7615250017DB20 /* Lib */,
 				65EA76161C74C18A0017DB20 /* Other */,
 			);
 			path = Classes;
@@ -160,6 +180,10 @@
 			children = (
 				65EA75F91C74C18A0017DB20 /* XFConcernViewController.h */,
 				65EA75FA1C74C18A0017DB20 /* XFConcernViewController.m */,
+				65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */,
+				65EA762F1C760B790017DB20 /* XFRecommendViewController.h */,
+				65EA76301C760B790017DB20 /* XFRecommendViewController.m */,
+				65EA76311C760B790017DB20 /* XFRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +191,8 @@
 		65EA75FB1C74C18A0017DB20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65EA763D1C761FD10017DB20 /* XFCategoryModel.h */,
+				65EA763E1C761FD10017DB20 /* XFCategoryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +200,8 @@
 		65EA75FC1C74C18A0017DB20 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				65EA763A1C761B0B0017DB20 /* XFRcommandDataTool.h */,
+				65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -330,6 +358,8 @@
 			children = (
 				65EA760D1C74C18A0017DB20 /* XFTabBarViewController.h */,
 				65EA760E1C74C18A0017DB20 /* XFTabBarViewController.m */,
+				65EA762C1C75D7470017DB20 /* XFNavigationController.h */,
+				65EA762D1C75D7470017DB20 /* XFNavigationController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -341,6 +371,15 @@
 				65EA76221C74C2010017DB20 /* XFTabBar.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		65EA76361C7615250017DB20 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				65EA76371C7615480017DB20 /* HttpTool.h */,
+				65EA76381C7615480017DB20 /* HttpTool.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		A665137DCAB793132FF0FD7E /* Frameworks */ = {
@@ -414,6 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
+				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
+				65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */,
 				65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */,
 				65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */,
 			);
@@ -477,12 +518,17 @@
 				65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */,
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
+				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
+				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
 				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
+				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
+				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
 				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
+				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

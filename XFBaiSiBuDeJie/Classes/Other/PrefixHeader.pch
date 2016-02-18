@@ -12,6 +12,12 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
+#define GLOBALCOLOR(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a];
+//背景色
+#define BackgroundColor GLOBALCOLOR(229, 229, 229,1)
+
+
+#import "ReactiveCocoa.h"
 #import "UIView+Extension.h"
 
 #endif /* PrefixHeader_pch */

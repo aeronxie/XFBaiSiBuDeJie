@@ -7,9 +7,10 @@
 //
 
 #import "XFConcernViewController.h"
+#import "XFRecommendViewController.h"
 
 @interface XFConcernViewController ()
-
+@property (nonatomic,strong) UIButton *recommandBtn;
 @end
 
 @implementation XFConcernViewController
@@ -17,7 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+    self.view.backgroundColor = BackgroundColor;
+    [self setupNavBar];
+}
+
+
+- (void)setupNavBar
+{
+    self.navigationItem.title = @"我的关注";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.recommandBtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +34,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIButton *)recommandBtn {
+    if (_recommandBtn == nil) {
+        _recommandBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_recommandBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
+        [_recommandBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
+        _recommandBtn.size = _recommandBtn.currentBackgroundImage.size;
+        [[_recommandBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+            XFRecommendViewController *rcVc = [[XFRecommendViewController alloc]init];
+            [self.navigationController pushViewController:rcVc animated:YES];
+        }];
+        
+    }
+    return _recommandBtn;
 }
-*/
 
 @end

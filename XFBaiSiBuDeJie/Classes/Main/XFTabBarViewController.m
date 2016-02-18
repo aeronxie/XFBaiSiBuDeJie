@@ -12,6 +12,7 @@
 #import "XFLatestViewController.h"
 #import "XFMeViewController.h"
 #import "XFTabBar.h"
+#import "XFNavigationController.h"
 
 @interface XFTabBarViewController ()
 
@@ -22,14 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //设置tabbar的文字颜色
-    UITabBarItem *appearance = [UITabBarItem appearance];
-    [appearance setTitleTextAttributes:@{
-                                         NSForegroundColorAttributeName : [UIColor darkGrayColor]}
-                              forState:UIControlStateSelected];
-    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-    
     
     [self initialControllers];
     
@@ -56,7 +49,7 @@
     viewVc.tabBarItem.image = [UIImage imageNamed:image];
     viewVc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     viewVc.tabBarItem.title = title;
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:viewVc];
+    XFNavigationController *navi = [[XFNavigationController alloc]initWithRootViewController:viewVc];
     [self addChildViewController:navi];
     
 }

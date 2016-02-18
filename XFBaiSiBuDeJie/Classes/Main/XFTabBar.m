@@ -17,6 +17,12 @@
     
     if (self = [super initWithFrame:frame]) {
         
+        //设置tabbar的文字颜色
+        UITabBarItem *appearance = [UITabBarItem appearance];
+        [appearance setTitleTextAttributes:@{
+                                             NSForegroundColorAttributeName : [UIColor darkGrayColor]}
+                                  forState:UIControlStateSelected];
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
         UIButton *publishBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
