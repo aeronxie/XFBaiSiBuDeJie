@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
   
-    self.view.backgroundColor = GLOBALCOLOR(arc4random_uniform(255)/255.0, arc4random_uniform(255)/255.0, arc4random_uniform(255)/255.0, 1)
+    self.view.backgroundColor = GLOBALCOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1);
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.naviLeftBtn];
 }

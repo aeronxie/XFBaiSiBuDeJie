@@ -26,6 +26,11 @@
 		65EA76391C7615480017DB20 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76381C7615480017DB20 /* HttpTool.m */; };
 		65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */; };
 		65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763E1C761FD10017DB20 /* XFCategoryModel.m */; };
+		65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76411C76FB410017DB20 /* XFCategoryCell.m */; };
+		65EA76441C76FB410017DB20 /* XFCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76421C76FB410017DB20 /* XFCategoryCell.xib */; };
+		65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76461C770DDC0017DB20 /* XFMainTableCell.m */; };
+		65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */; };
+		65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +70,14 @@
 		65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFRcommandDataTool.m; path = ../../../../../Documents/XFRcommandDataTool.m; sourceTree = "<group>"; };
 		65EA763D1C761FD10017DB20 /* XFCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFCategoryModel.h; path = ../../../../../Documents/XFCategoryModel.h; sourceTree = "<group>"; };
 		65EA763E1C761FD10017DB20 /* XFCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFCategoryModel.m; path = ../../../../../Documents/XFCategoryModel.m; sourceTree = "<group>"; };
+		65EA76401C76FB410017DB20 /* XFCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFCategoryCell.h; path = ../../../../../Documents/XFCategoryCell.h; sourceTree = "<group>"; };
+		65EA76411C76FB410017DB20 /* XFCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFCategoryCell.m; path = ../../../../../Documents/XFCategoryCell.m; sourceTree = "<group>"; };
+		65EA76421C76FB410017DB20 /* XFCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFCategoryCell.xib; path = ../../../../../Documents/XFCategoryCell.xib; sourceTree = "<group>"; };
+		65EA76451C770DDC0017DB20 /* XFMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMainTableCell.h; path = ../../../../../Documents/XFMainTableCell.h; sourceTree = "<group>"; };
+		65EA76461C770DDC0017DB20 /* XFMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMainTableCell.m; path = ../../../../../Documents/XFMainTableCell.m; sourceTree = "<group>"; };
+		65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFMainTableCell.xib; path = ../../../../../Documents/XFMainTableCell.xib; sourceTree = "<group>"; };
+		65EA764A1C7711AF0017DB20 /* XFMainTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMainTableModel.h; path = ../../../../../Documents/XFMainTableModel.h; sourceTree = "<group>"; };
+		65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMainTableModel.m; path = ../../../../../Documents/XFMainTableModel.m; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF97E68F796933B40822AB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +206,8 @@
 			children = (
 				65EA763D1C761FD10017DB20 /* XFCategoryModel.h */,
 				65EA763E1C761FD10017DB20 /* XFCategoryModel.m */,
+				65EA764A1C7711AF0017DB20 /* XFMainTableModel.h */,
+				65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +224,12 @@
 		65EA75FD1C74C18A0017DB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65EA76401C76FB410017DB20 /* XFCategoryCell.h */,
+				65EA76411C76FB410017DB20 /* XFCategoryCell.m */,
+				65EA76421C76FB410017DB20 /* XFCategoryCell.xib */,
+				65EA76451C770DDC0017DB20 /* XFMainTableCell.h */,
+				65EA76461C770DDC0017DB20 /* XFMainTableCell.m */,
+				65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,11 +473,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
 				65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */,
 				65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */,
 				65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */,
+				65EA76441C76FB410017DB20 /* XFCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,12 +545,15 @@
 				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
 				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
 				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
+				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
+				65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */,
 				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
+				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
 				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

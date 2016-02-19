@@ -6,3 +6,4 @@ pod 'MJExtension', '~> 3.0.7'
 pod 'UMengSocial', '~> 4.3'
 use_frameworks!
 pod 'ReactiveCocoa', '~> 4.0.4-alpha-4’
+pod 'MJRefresh', '~> 3.1.0'
