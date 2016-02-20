@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XFTabBarViewController.h"
+#import "XFGuideView.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,7 @@
     
     [self.window makeKeyAndVisible];
     
+    [self showGuiView];
     
     return YES;
 }
@@ -52,5 +54,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+-(void)showGuiView {
+    
+    //获得当前版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    //沙盒版本号
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"CFBundleShortVersionString"];
+    
+    if (![currentVersion isEqualToString:lastVersion]) {
+        XFGuideView *guideView = [XFGuideView guideView];
+        guideView.frame = self.window.bounds;
+        [self.window addSubview:guideView];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleShortVersionString"];
+        //马上写入沙盒
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+    }
+}
+
+
 
 @end

@@ -11,6 +11,8 @@
 		652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2641C785F620027B71B /* XFLoginViewController.xib */; };
 		652CB2691C789E210027B71B /* XFShowWordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2681C789E210027B71B /* XFShowWordBtn.m */; };
 		652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB26B1C78AABF0027B71B /* XFTextfield.m */; };
+		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
+		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
@@ -42,10 +44,13 @@
 		652CB2621C785F620027B71B /* XFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoginViewController.h; sourceTree = "<group>"; };
 		652CB2631C785F620027B71B /* XFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoginViewController.m; sourceTree = "<group>"; };
 		652CB2641C785F620027B71B /* XFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFLoginViewController.xib; sourceTree = "<group>"; };
-		652CB2671C789E210027B71B /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFShowWordBtn.h; path = ../Concern/View/XFShowWordBtn.h; sourceTree = "<group>"; };
-		652CB2681C789E210027B71B /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFShowWordBtn.m; path = ../Concern/View/XFShowWordBtn.m; sourceTree = "<group>"; };
+		652CB2671C789E210027B71B /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFShowWordBtn.h; path = ../../Concern/View/XFShowWordBtn.h; sourceTree = "<group>"; };
+		652CB2681C789E210027B71B /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFShowWordBtn.m; path = ../../Concern/View/XFShowWordBtn.m; sourceTree = "<group>"; };
 		652CB26A1C78AABF0027B71B /* XFTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTextfield.h; sourceTree = "<group>"; };
 		652CB26B1C78AABF0027B71B /* XFTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextfield.m; sourceTree = "<group>"; };
+		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
+		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
+		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +118,25 @@
 				E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		652CB26D1C78E1830027B71B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		652CB26E1C78E1830027B71B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				652CB2671C789E210027B71B /* XFShowWordBtn.h */,
+				652CB2681C789E210027B71B /* XFShowWordBtn.m */,
+				652CB26F1C78E1B20027B71B /* XFGuideView.h */,
+				652CB2701C78E1B20027B71B /* XFGuideView.m */,
+				652CB2721C78E1C00027B71B /* XFGuideView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		65EA75821C74AB4C0017DB20 = {
@@ -385,8 +409,8 @@
 		65EA76161C74C18A0017DB20 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				652CB2671C789E210027B71B /* XFShowWordBtn.h */,
-				652CB2681C789E210027B71B /* XFShowWordBtn.m */,
+				652CB26D1C78E1830027B71B /* Controller */,
+				652CB26E1C78E1830027B71B /* View */,
 				65EA762B1C74C5840017DB20 /* PrefixHeader.pch */,
 			);
 			path = Other;
@@ -494,6 +518,7 @@
 				652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */,
 				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
+				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
 				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
 				65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */,
 				65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */,
@@ -563,6 +588,7 @@
 				652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */,
 				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
 				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
+				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
 				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
 				652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */,
 				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
