@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2631C785F620027B71B /* XFLoginViewController.m */; };
+		652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2641C785F620027B71B /* XFLoginViewController.xib */; };
+		652CB2691C789E210027B71B /* XFShowWordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2681C789E210027B71B /* XFShowWordBtn.m */; };
+		652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB26B1C78AABF0027B71B /* XFTextfield.m */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
@@ -35,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652CB2621C785F620027B71B /* XFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoginViewController.h; sourceTree = "<group>"; };
+		652CB2631C785F620027B71B /* XFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoginViewController.m; sourceTree = "<group>"; };
+		652CB2641C785F620027B71B /* XFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFLoginViewController.xib; sourceTree = "<group>"; };
+		652CB2671C789E210027B71B /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFShowWordBtn.h; path = ../Concern/View/XFShowWordBtn.h; sourceTree = "<group>"; };
+		652CB2681C789E210027B71B /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFShowWordBtn.m; path = ../Concern/View/XFShowWordBtn.m; sourceTree = "<group>"; };
+		652CB26A1C78AABF0027B71B /* XFTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTextfield.h; sourceTree = "<group>"; };
+		652CB26B1C78AABF0027B71B /* XFTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextfield.m; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +208,9 @@
 				65EA762F1C760B790017DB20 /* XFRecommendViewController.h */,
 				65EA76301C760B790017DB20 /* XFRecommendViewController.m */,
 				65EA76311C760B790017DB20 /* XFRecommendViewController.xib */,
+				652CB2621C785F620027B71B /* XFLoginViewController.h */,
+				652CB2631C785F620027B71B /* XFLoginViewController.m */,
+				652CB2641C785F620027B71B /* XFLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -230,6 +244,8 @@
 				65EA76451C770DDC0017DB20 /* XFMainTableCell.h */,
 				65EA76461C770DDC0017DB20 /* XFMainTableCell.m */,
 				65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */,
+				652CB26A1C78AABF0027B71B /* XFTextfield.h */,
+				652CB26B1C78AABF0027B71B /* XFTextfield.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,6 +385,8 @@
 		65EA76161C74C18A0017DB20 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				652CB2671C789E210027B71B /* XFShowWordBtn.h */,
+				652CB2681C789E210027B71B /* XFShowWordBtn.m */,
 				65EA762B1C74C5840017DB20 /* PrefixHeader.pch */,
 			);
 			path = Other;
@@ -473,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */,
 				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
@@ -541,9 +560,11 @@
 				65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */,
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
+				652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */,
 				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
 				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
 				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
+				652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */,
 				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
 				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
@@ -555,6 +576,7 @@
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
 				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
 				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
+				652CB2691C789E210027B71B /* XFShowWordBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "XFConcernViewController.h"
 #import "XFRecommendViewController.h"
+#import "XFLoginViewController.h"
 
 @interface XFConcernViewController ()
 @property (nonatomic,strong) UIButton *recommandBtn;
@@ -22,7 +23,21 @@
     [self setupNavBar];
 }
 
+- (IBAction)loginBtn:(UIButton *)sender {
+    
+    XFLoginViewController *loginVc = [[XFLoginViewController alloc]init];
+    [self presentViewController:loginVc animated:YES completion:nil];
+    
+}
 
+- (IBAction)registerBtn:(UIButton *)sender {
+    XFLoginViewController *loginVc = [[XFLoginViewController alloc]init];
+    [self presentViewController:loginVc animated:YES completion:nil];
+
+
+}
+
+//设置导航条
 - (void)setupNavBar
 {
     self.navigationItem.title = @"我的关注";
