@@ -18,6 +18,10 @@
 		65A284611C79958800D8031B /* XFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284601C79958800D8031B /* XFVideoViewController.m */; };
 		65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284631C7995BD00D8031B /* XFTalkViewController.m */; };
 		65A284671C799A9400D8031B /* XFAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284661C799A9400D8031B /* XFAllViewController.m */; };
+		65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284691C7B2DE500D8031B /* XFModuleDataTool.m */; };
+		65A2846D1C7B33E700D8031B /* XFTalkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846C1C7B33E700D8031B /* XFTalkModel.m */; };
+		65A284711C7B355D00D8031B /* XFTalkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846F1C7B355D00D8031B /* XFTalkCell.m */; };
+		65A284721C7B355D00D8031B /* XFTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A284701C7B355D00D8031B /* XFTalkCell.xib */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
@@ -66,6 +70,13 @@
 		65A284631C7995BD00D8031B /* XFTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTalkViewController.m; sourceTree = "<group>"; };
 		65A284651C799A9400D8031B /* XFAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFAllViewController.h; sourceTree = "<group>"; };
 		65A284661C799A9400D8031B /* XFAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFAllViewController.m; sourceTree = "<group>"; };
+		65A284681C7B2DE500D8031B /* XFModuleDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFModuleDataTool.h; sourceTree = "<group>"; };
+		65A284691C7B2DE500D8031B /* XFModuleDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFModuleDataTool.m; sourceTree = "<group>"; };
+		65A2846B1C7B33E700D8031B /* XFTalkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTalkModel.h; sourceTree = "<group>"; };
+		65A2846C1C7B33E700D8031B /* XFTalkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTalkModel.m; sourceTree = "<group>"; };
+		65A2846E1C7B355D00D8031B /* XFTalkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTalkCell.h; sourceTree = "<group>"; };
+		65A2846F1C7B355D00D8031B /* XFTalkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTalkCell.m; sourceTree = "<group>"; };
+		65A284701C7B355D00D8031B /* XFTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFTalkCell.xib; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -322,6 +333,8 @@
 		65EA76021C74C18A0017DB20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65A2846B1C7B33E700D8031B /* XFTalkModel.h */,
+				65A2846C1C7B33E700D8031B /* XFTalkModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +342,8 @@
 		65EA76031C74C18A0017DB20 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				65A284681C7B2DE500D8031B /* XFModuleDataTool.h */,
+				65A284691C7B2DE500D8031B /* XFModuleDataTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -336,6 +351,9 @@
 		65EA76041C74C18A0017DB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65A2846E1C7B355D00D8031B /* XFTalkCell.h */,
+				65A2846F1C7B355D00D8031B /* XFTalkCell.m */,
+				65A284701C7B355D00D8031B /* XFTalkCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -541,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */,
+				65A284721C7B355D00D8031B /* XFTalkCell.xib in Resources */,
 				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
@@ -612,6 +631,7 @@
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
 				652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */,
 				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
+				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
 				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
@@ -623,12 +643,14 @@
 				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
+				65A284711C7B355D00D8031B /* XFTalkCell.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
 				65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */,
 				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
+				65A2846D1C7B33E700D8031B /* XFTalkModel.m in Sources */,
 				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
 				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
 				65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */,

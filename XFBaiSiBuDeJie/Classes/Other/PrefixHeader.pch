@@ -17,6 +17,7 @@
 //背景色
 #define BackgroundColor GLOBALCOLOR(229, 229, 229,1)
 
+#define BaseURL @"http://api.budejie.com/api/api_open.php"
 
 #import "ReactiveCocoa.h"
 #import "UIView+Extension.h"
