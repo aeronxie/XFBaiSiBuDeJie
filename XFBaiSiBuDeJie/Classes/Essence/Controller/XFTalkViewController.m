@@ -7,13 +7,13 @@
 //
 
 #import "XFTalkViewController.h"
-#import "XFTalkCell.h"
+#import "XFTopicCell.h"
 #import "XFTalkModel.h"
 #import "XFModuleDataTool.h"
 #import "MJRefresh.h"
 
 
-static NSString *const CellID = @"talk";
+static NSString *const CellID = @"topic";
 
 @interface XFTalkViewController ()
 @property (nonatomic,strong) XFModuleDataTool *tool;
@@ -55,28 +55,30 @@ static NSString *const CellID = @"talk";
 //获取最新数据
 -(void)getNewData {
     self.page = 0;//清空
-    @weakify(self)
-    [self.tool getTalkDataWithArray:^(id json,NSString *maxtime) {
+     @weakify(self)
+    [self.tool getTalkDataWithArrayType:TopicTypeTalk block:^(id json, NSString *maxtime) {
         @strongify(self)
-        self.datas = json;
-        self.maxtime = maxtime;
-        [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+            self.datas = json;
+            self.maxtime = maxtime;
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
     }];
+    
 }
 
 //获取更多数据
 -(void)getMoreData {
     //计算页码
     NSInteger page = self.page+1;
-     @weakify(self)
-    [self.tool getTalkDataWithMaxtime:self.maxtime page:@(page) block:^(id json,NSString *maxtime) {
+    @weakify(self)
+    [self.tool getTalkDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeTalk block:^(id json,NSString *maxtime) {
         @strongify(self)
-            [self.datas addObjectsFromArray:json];
-            [self.tableView reloadData];
-            self.page = page;
-            self.maxtime = maxtime;
+        [self.datas addObjectsFromArray:json];
+        [self.tableView reloadData];
+        self.page = page;
+        self.maxtime = maxtime;
         [self.tableView.mj_footer endRefreshing];
+
     }];
     
 }
@@ -86,7 +88,7 @@ static NSString *const CellID = @"talk";
 -(void)settableView{
     self.view.backgroundColor = BackgroundColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.tableView registerNib:[UINib nibWithNibName:@"XFTalkCell" bundle:nil] forCellReuseIdentifier:CellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"XFTopicCell" bundle:nil] forCellReuseIdentifier:CellID];
 }
 
 
@@ -98,7 +100,7 @@ static NSString *const CellID = @"talk";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    XFTalkCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    XFTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     
     cell.model = self.datas[indexPath.row];
  
@@ -107,8 +109,10 @@ static NSString *const CellID = @"talk";
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return 200.f;
+    //计算文字高度
+    XFTalkModel *model = self.datas[indexPath.row];
+    CGFloat cellHeight = model.cellHeight;
+    return cellHeight;
 }
 
 #pragma mark - getter and setter

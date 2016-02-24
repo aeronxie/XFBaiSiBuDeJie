@@ -6,10 +6,11 @@
 //  Copyright © 2016年 谢飞. All rights reserved.
 //
 
-#import "XFTalkCell.h"
+#import "XFTopicCell.h"
 #import "UIImageView+WebCache.h"
+#import "XFContentPictureView.h"
 
-@interface XFTalkCell ()
+@interface XFTopicCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
 @property (weak, nonatomic) IBOutlet UILabel *name;
@@ -18,11 +19,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiBtn;
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
 @property (weak, nonatomic) IBOutlet UIButton *commenBtn;
+@property (weak, nonatomic) IBOutlet UILabel *text;
 
-@property (weak, nonatomic) IBOutlet UITextView *text;
+@property (strong,nonatomic) XFContentPictureView *contentPicView;
 @end
 
-@implementation XFTalkCell
+@implementation XFTopicCell
 
 
 

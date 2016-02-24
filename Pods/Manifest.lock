@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
   - ReactiveCocoa (4.0.4-alpha-4):
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.0-beta.3)
+  - DACircularProgress (~> 2.3.1)
   - MJExtension (~> 3.0.7)
   - MJRefresh (~> 3.1.0)
   - ReactiveCocoa (~> 4.0.4-alpha-4)
@@ -45,6 +47,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094

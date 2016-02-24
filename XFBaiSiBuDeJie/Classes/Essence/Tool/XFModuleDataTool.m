@@ -13,12 +13,12 @@
 
 
 @implementation XFModuleDataTool
--(void)getTalkDataWithArray:(void (^)(id json,id param))block {
+-(void)getTalkDataWithArrayType:(TopicType)type block:(void (^)(id json,id param))block {
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(type);
 
     [HttpTool get:BaseURL parameters:params success:^(id json) {
         
@@ -31,7 +31,7 @@
     }];
 }
 
--(void)getTalkDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page block:(void (^)(id json,id param))block {
+-(void)getTalkDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block {
     
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];

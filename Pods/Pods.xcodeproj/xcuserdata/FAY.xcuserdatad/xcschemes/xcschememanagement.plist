@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6847254D016329D4A531D34ED2B6DF81</key>
+		<key>2ADA0CE1CC09875690C21329EFFAFECC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7285F9FF206CC1DA923357B9EE3911BA</key>
+		<key>6754B69F5BD0F11C8E9B7D12CC01EDE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6847254D016329D4A531D34ED2B6DF81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDE9414DA165C219F5ABA6FE8095AFEE</key>
+		<key>8CFD890B7961A322797575A395201D29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C95930C240668059320860784CCEBF05</key>
+		<key>94624EC6C9739263AA965CFE2D8933F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E44CDADAF57E9DE222637BC9E7ED14A9</key>
+		<key>D68D935F14778466279148D8359D56D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F6B30B55347E2D88415D17A83BED02ED</key>
+		<key>F391818A57BCC549AD9761AF78881C48</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -26,4 +26,7 @@
 /** 评论的数量 */
 @property (nonatomic, assign) NSInteger comment;
 
+/** cell的高度 */
+@property (nonatomic, assign) CGFloat cellHeight;
+
 @end
