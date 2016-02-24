@@ -8,7 +8,7 @@
 
 #import "XFTalkViewController.h"
 #import "XFTopicCell.h"
-#import "XFTalkModel.h"
+#import "XFTopicModel.h"
 #import "XFModuleDataTool.h"
 #import "MJRefresh.h"
 
@@ -18,6 +18,7 @@ static NSString *const CellID = @"topic";
 @interface XFTalkViewController ()
 @property (nonatomic,strong) XFModuleDataTool *tool;
 @property (nonatomic,strong) NSMutableArray *datas;
+@property (nonatomic,strong) NSMutableArray *topicsFrame;
 /** 当前页码 */
 @property (nonatomic, assign) NSInteger page;
 /** 当加载下一页数据时需要的参数 */
@@ -58,7 +59,11 @@ static NSString *const CellID = @"topic";
      @weakify(self)
     [self.tool getTalkDataWithArrayType:TopicTypeTalk block:^(id json, NSString *maxtime) {
         @strongify(self)
-            self.datas = json;
+        for (XFTopicModel *topic in json) {
+            XFTopicFrame *topicFrame = [[XFTopicFrame alloc]init];
+            topicFrame.topic = topic;
+            [self.topicsFrame addObject:topicFrame];
+        }
             self.maxtime = maxtime;
             [self.tableView reloadData];
             [self.tableView.mj_header endRefreshing];
@@ -73,16 +78,20 @@ static NSString *const CellID = @"topic";
     @weakify(self)
     [self.tool getTalkDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeTalk block:^(id json,NSString *maxtime) {
         @strongify(self)
-        [self.datas addObjectsFromArray:json];
+        NSMutableArray *newFrames = [NSMutableArray array];
+        for (XFTopicModel *topic in json) {
+            XFTopicFrame *topicFrame = [[XFTopicFrame alloc]init];
+            topicFrame.topic = topic;
+            [newFrames addObject:topicFrame];
+        }
+    
+        [self.topicsFrame addObjectsFromArray:newFrames];
         [self.tableView reloadData];
         self.page = page;
         self.maxtime = maxtime;
         [self.tableView.mj_footer endRefreshing];
-
     }];
-    
 }
-
 
 //设置tableView
 -(void)settableView{
@@ -94,7 +103,7 @@ static NSString *const CellID = @"topic";
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.datas.count;
+    return self.topicsFrame.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -102,17 +111,15 @@ static NSString *const CellID = @"topic";
     
     XFTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     
-    cell.model = self.datas[indexPath.row];
- 
-    
+    cell.topicFrame = self.topicsFrame[indexPath.row];
+
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //计算文字高度
-    XFTalkModel *model = self.datas[indexPath.row];
-    CGFloat cellHeight = model.cellHeight;
-    return cellHeight;
+    //取出frame模型
+    XFTopicFrame *topicFrame = self.topicsFrame[indexPath.row];
+    return topicFrame.cellHeight;
 }
 
 #pragma mark - getter and setter
@@ -124,5 +131,12 @@ static NSString *const CellID = @"topic";
     return _tool;
 }
 
+- (NSMutableArray *)topicsFrame{
+    if (_topicsFrame == nil) {
+        _topicsFrame = [NSMutableArray array];
+        
+    }
+    return _topicsFrame;
+}
 
 @end

@@ -9,7 +9,7 @@
 #import "XFModuleDataTool.h"
 #import "HttpTool.h"
 #import "MJExtension.h"
-#import "XFTalkModel.h"
+#import "XFTopicModel.h"
 
 
 @implementation XFModuleDataTool
@@ -22,7 +22,7 @@
 
     [HttpTool get:BaseURL parameters:params success:^(id json) {
         
-        NSArray *talekArray = [XFTalkModel mj_objectArrayWithKeyValuesArray:json[@"list"]];
+        NSArray *talekArray = [XFTopicModel mj_objectArrayWithKeyValuesArray:json[@"list"]];
          NSString *maxTime = json[@"info"][@"maxtime"];
         block(talekArray,maxTime);
         
@@ -37,13 +37,13 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(type);
     params[@"page"] = page;
     params[@"maxtime"] = maxtime;
 
     [HttpTool get:BaseURL parameters:params success:^(id json) {
         
-        NSArray *talkMoreArray = [XFTalkModel mj_objectArrayWithKeyValuesArray:json[@"list"]];
+        NSArray *talkMoreArray = [XFTopicModel mj_objectArrayWithKeyValuesArray:json[@"list"]];
         
        NSString *maxTime = json[@"info"][@"maxtime"];
         block(talkMoreArray,maxTime);

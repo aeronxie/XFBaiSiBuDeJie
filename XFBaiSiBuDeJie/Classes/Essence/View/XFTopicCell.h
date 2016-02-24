@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XFTalkModel.h"
-#import "XFPictureModel.h"
+#import "XFTopicFrame.h"
+
 
 @interface XFTopicCell : UITableViewCell
-@property (nonatomic, strong) XFTalkModel *model;
-@property (nonatomic, strong) XFPictureModel *picModel;
-
-
+@property (nonatomic, strong) XFTopicFrame *topicFrame;
 @end

@@ -8,13 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-    TopicTypeAll = 1,
-    TopicTypePicture = 10,
-    TopicTypeTalk = 29,
-    TopicTypeVoice = 31,
-    TopicTypeVideo = 41
-} TopicType;
 
 @interface XFModuleDataTool : NSObject
 /**

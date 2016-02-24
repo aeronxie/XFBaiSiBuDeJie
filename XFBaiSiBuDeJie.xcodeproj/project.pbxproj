@@ -13,16 +13,19 @@
 		652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB26B1C78AABF0027B71B /* XFTextfield.m */; };
 		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
 		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
-		65752E2D1C7C937E0005CCB2 /* XFPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2C1C7C937E0005CCB2 /* XFPictureModel.m */; };
 		65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */; };
 		65752E321C7C9E3F0005CCB2 /* XFContentPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65752E311C7C9E3F0005CCB2 /* XFContentPictureView.xib */; };
+		65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */; };
+		65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */; };
+		65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */; };
+		65752E3E1C7DAB9B0005CCB2 /* XFContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */; };
 		65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845A1C79956800D8031B /* XFVocieViewController.m */; };
 		65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845D1C79957D00D8031B /* XFPictrueViewController.m */; };
 		65A284611C79958800D8031B /* XFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284601C79958800D8031B /* XFVideoViewController.m */; };
 		65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284631C7995BD00D8031B /* XFTalkViewController.m */; };
 		65A284671C799A9400D8031B /* XFAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284661C799A9400D8031B /* XFAllViewController.m */; };
 		65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284691C7B2DE500D8031B /* XFModuleDataTool.m */; };
-		65A2846D1C7B33E700D8031B /* XFTalkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846C1C7B33E700D8031B /* XFTalkModel.m */; };
+		65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846C1C7B33E700D8031B /* XFTopicModel.m */; };
 		65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846F1C7B355D00D8031B /* XFTopicCell.m */; };
 		65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A284701C7B355D00D8031B /* XFTopicCell.xib */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
@@ -63,11 +66,17 @@
 		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
 		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
 		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
-		65752E2B1C7C937E0005CCB2 /* XFPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPictureModel.h; sourceTree = "<group>"; };
-		65752E2C1C7C937E0005CCB2 /* XFPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFPictureModel.m; sourceTree = "<group>"; };
 		65752E2E1C7C9E120005CCB2 /* XFContentPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentPictureView.h; sourceTree = "<group>"; };
 		65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentPictureView.m; sourceTree = "<group>"; };
 		65752E311C7C9E3F0005CCB2 /* XFContentPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentPictureView.xib; sourceTree = "<group>"; };
+		65752E331C7D8F7C0005CCB2 /* XFTopicFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTopicFrame.h; sourceTree = "<group>"; };
+		65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTopicFrame.m; sourceTree = "<group>"; };
+		65752E361C7D9DBC0005CCB2 /* XFContentVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentVoiceView.h; sourceTree = "<group>"; };
+		65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVoiceView.m; sourceTree = "<group>"; };
+		65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentVideoView.h; sourceTree = "<group>"; };
+		65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVideoView.m; sourceTree = "<group>"; };
+		65752E3C1C7DAB9B0005CCB2 /* XFContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentView.h; sourceTree = "<group>"; };
+		65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentView.m; sourceTree = "<group>"; };
 		65A284591C79956800D8031B /* XFVocieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFVocieViewController.h; sourceTree = "<group>"; };
 		65A2845A1C79956800D8031B /* XFVocieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVocieViewController.m; sourceTree = "<group>"; };
 		65A2845C1C79957D00D8031B /* XFPictrueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPictrueViewController.h; sourceTree = "<group>"; };
@@ -80,8 +89,8 @@
 		65A284661C799A9400D8031B /* XFAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFAllViewController.m; sourceTree = "<group>"; };
 		65A284681C7B2DE500D8031B /* XFModuleDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFModuleDataTool.h; sourceTree = "<group>"; };
 		65A284691C7B2DE500D8031B /* XFModuleDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFModuleDataTool.m; sourceTree = "<group>"; };
-		65A2846B1C7B33E700D8031B /* XFTalkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTalkModel.h; sourceTree = "<group>"; };
-		65A2846C1C7B33E700D8031B /* XFTalkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTalkModel.m; sourceTree = "<group>"; };
+		65A2846B1C7B33E700D8031B /* XFTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTopicModel.h; sourceTree = "<group>"; };
+		65A2846C1C7B33E700D8031B /* XFTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTopicModel.m; sourceTree = "<group>"; };
 		65A2846E1C7B355D00D8031B /* XFTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTopicCell.h; sourceTree = "<group>"; };
 		65A2846F1C7B355D00D8031B /* XFTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTopicCell.m; sourceTree = "<group>"; };
 		65A284701C7B355D00D8031B /* XFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFTopicCell.xib; sourceTree = "<group>"; };
@@ -341,10 +350,10 @@
 		65EA76021C74C18A0017DB20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				65A2846B1C7B33E700D8031B /* XFTalkModel.h */,
-				65A2846C1C7B33E700D8031B /* XFTalkModel.m */,
-				65752E2B1C7C937E0005CCB2 /* XFPictureModel.h */,
-				65752E2C1C7C937E0005CCB2 /* XFPictureModel.m */,
+				65A2846B1C7B33E700D8031B /* XFTopicModel.h */,
+				65A2846C1C7B33E700D8031B /* XFTopicModel.m */,
+				65752E331C7D8F7C0005CCB2 /* XFTopicFrame.h */,
+				65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +376,12 @@
 				65752E2E1C7C9E120005CCB2 /* XFContentPictureView.h */,
 				65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */,
 				65752E311C7C9E3F0005CCB2 /* XFContentPictureView.xib */,
+				65752E361C7D9DBC0005CCB2 /* XFContentVoiceView.h */,
+				65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */,
+				65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */,
+				65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */,
+				65752E3C1C7DAB9B0005CCB2 /* XFContentView.h */,
+				65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,7 +659,6 @@
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
 				652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */,
-				65752E2D1C7C937E0005CCB2 /* XFPictureModel.m in Sources */,
 				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
 				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
@@ -657,7 +671,9 @@
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,
 				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
+				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
+				65752E3E1C7DAB9B0005CCB2 /* XFContentView.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
@@ -665,8 +681,10 @@
 				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
 				65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
+				65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */,
+				65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */,
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
-				65A2846D1C7B33E700D8031B /* XFTalkModel.m in Sources */,
+				65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */,
 				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
 				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
 				65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */,

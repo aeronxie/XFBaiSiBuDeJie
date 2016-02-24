@@ -22,4 +22,12 @@
 #import "ReactiveCocoa.h"
 #import "UIView+Extension.h"
 
+typedef NS_ENUM(NSUInteger, TopicType) {
+    TopicTypeAll = 1, // 全部
+    TopicTypePicture = 10, // 图片
+    TopicTypeTalk = 29, // 段子
+    TopicTypeVoice = 31, // 声音
+    TopicTypeVideo = 41 // 视频
+};
+
 #endif /* PrefixHeader_pch */

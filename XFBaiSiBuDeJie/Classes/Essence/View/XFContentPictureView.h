@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XFPictureModel.h"
+#import "XFContentView.h"
 
-@interface XFContentPictureView : UIView
+@interface XFContentPictureView : XFContentView
+
 + (instancetype)pictureView;
-@property (nonatomic, strong) XFPictureModel *picModel;
+
 @end

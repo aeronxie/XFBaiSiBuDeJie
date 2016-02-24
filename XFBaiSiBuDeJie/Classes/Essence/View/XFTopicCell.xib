@@ -52,7 +52,7 @@
                             <constraint firstAttribute="width" constant="20" id="Yey-Sr-idK"/>
                             <constraint firstAttribute="height" constant="20" id="svn-Jc-A44"/>
                         </constraints>
-                        <state key="normal" backgroundImage="cellFollowIcon"/>
+                        <state key="normal" backgroundImage="cellmorebtnnormal"/>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUV-Ff-0aZ">
                         <rect key="frame" x="0.0" y="145" width="320" height="35"/>
@@ -190,7 +190,7 @@
     <resources>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
-        <image name="cellFollowIcon" width="19" height="20"/>
+        <image name="cellmorebtnnormal" width="24" height="20"/>
         <image name="mainCellCai" width="20" height="20"/>
         <image name="mainCellCaiClick" width="20" height="20"/>
         <image name="mainCellComment" width="20" height="20"/>

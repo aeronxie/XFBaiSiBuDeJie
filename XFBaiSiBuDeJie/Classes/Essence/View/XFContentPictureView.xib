@@ -11,6 +11,25 @@
             <rect key="frame" x="0.0" y="0.0" width="347" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v9Z-7Z-WiY">
+                    <rect key="frame" x="0.0" y="0.0" width="347" height="300"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-5G-lUn" customClass="DALabeledCircularProgressView">
+                    <rect key="frame" x="123" y="99.5" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="PB4-wh-S6f"/>
+                        <constraint firstAttribute="width" constant="100" id="nVK-Pi-MWH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yka-Az-77O">
+                    <rect key="frame" x="0.0" y="255" width="347" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="8mX-OB-fnn"/>
+                    </constraints>
+                    <state key="normal" title="点击查看全图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
+                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-hd-glB">
                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                     <constraints>
@@ -19,30 +38,11 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-iV-J08">
-                    <rect key="frame" x="0.0" y="32" width="347" height="25"/>
+                    <rect key="frame" x="0.0" y="20" width="347" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="nDL-aN-cJJ"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yka-Az-77O">
-                    <rect key="frame" x="0.0" y="255" width="347" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="8mX-OB-fnn"/>
-                    </constraints>
-                    <state key="normal" title="点击查看全图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v9Z-7Z-WiY">
-                    <rect key="frame" x="0.0" y="0.0" width="347" height="300"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-5G-lUn" customClass="DALabeledCircularProgressView">
-                    <rect key="frame" x="101" y="78" width="144" height="143"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="143" id="PB4-wh-S6f"/>
-                        <constraint firstAttribute="width" constant="144" id="nVK-Pi-MWH"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -50,7 +50,7 @@
                 <constraint firstItem="v9Z-7Z-WiY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5zm-0u-YbD"/>
                 <constraint firstItem="v9Z-7Z-WiY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GJe-hO-Plc"/>
                 <constraint firstItem="Mls-5G-lUn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J0e-0X-vpB"/>
-                <constraint firstItem="eeh-iV-J08" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="UwR-Fd-OSv"/>
+                <constraint firstItem="eeh-iV-J08" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="UwR-Fd-OSv"/>
                 <constraint firstAttribute="trailing" secondItem="v9Z-7Z-WiY" secondAttribute="trailing" id="Xlm-RA-pLa"/>
                 <constraint firstItem="eeh-iV-J08" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yib-2Z-TkL"/>
                 <constraint firstItem="Mls-5G-lUn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="etu-cr-UKt"/>
@@ -63,9 +63,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="baisiView" destination="eeh-iV-J08" id="8PF-My-qWw"/>
                 <outlet property="bigPicBtn" destination="yka-Az-77O" id="sJf-Jt-gSM"/>
-                <outlet property="contentPicture" destination="v9Z-7Z-WiY" id="X7J-SY-3kv"/>
                 <outlet property="gifView" destination="OGT-hd-glB" id="D3h-Mt-Xm3"/>
+                <outlet property="imageView" destination="v9Z-7Z-WiY" id="rCa-51-s5O"/>
                 <outlet property="progrssView" destination="Mls-5G-lUn" id="fmL-Un-tzb"/>
             </connections>
             <point key="canvasLocation" x="93.5" y="-308"/>
