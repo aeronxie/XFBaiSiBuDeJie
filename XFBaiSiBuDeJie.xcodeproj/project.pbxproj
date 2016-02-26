@@ -52,6 +52,8 @@
 		65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76461C770DDC0017DB20 /* XFMainTableCell.m */; };
 		65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */; };
 		65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */; };
+		65FAABB31C80CA6F00A3C971 /* XFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB11C80CA6F00A3C971 /* XFPublishView.m */; };
+		65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +139,9 @@
 		65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFMainTableCell.xib; path = ../../../../../Documents/XFMainTableCell.xib; sourceTree = "<group>"; };
 		65EA764A1C7711AF0017DB20 /* XFMainTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMainTableModel.h; path = ../../../../../Documents/XFMainTableModel.h; sourceTree = "<group>"; };
 		65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMainTableModel.m; path = ../../../../../Documents/XFMainTableModel.m; sourceTree = "<group>"; };
+		65FAABB01C80CA6F00A3C971 /* XFPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPublishView.h; sourceTree = "<group>"; };
+		65FAABB11C80CA6F00A3C971 /* XFPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFPublishView.m; sourceTree = "<group>"; };
+		65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFPublishView.xib; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF97E68F796933B40822AB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -503,6 +508,9 @@
 			children = (
 				65EA76211C74C2010017DB20 /* XFTabBar.h */,
 				65EA76221C74C2010017DB20 /* XFTabBar.m */,
+				65FAABB01C80CA6F00A3C971 /* XFPublishView.h */,
+				65FAABB11C80CA6F00A3C971 /* XFPublishView.m */,
+				65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -588,6 +596,7 @@
 			files = (
 				652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */,
 				65752E321C7C9E3F0005CCB2 /* XFContentPictureView.xib in Resources */,
+				65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */,
 				65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */,
 				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
@@ -670,6 +679,7 @@
 				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,
 				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
+				65FAABB31C80CA6F00A3C971 /* XFPublishView.m in Sources */,
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,

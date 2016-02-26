@@ -7,6 +7,7 @@
 //
 
 #import "XFTabBar.h"
+#import "XFPublishView.h"
 
 @interface XFTabBar ()
 @property (nonatomic,strong) UIButton *publishBtn;
@@ -27,6 +28,13 @@
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
         publishBtn.size = publishBtn.currentBackgroundImage.size;
+        [[publishBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+            XFPublishView *publishView = [XFPublishView publishView];
+            publishView.frame = SCREEN_FRAME;
+            UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+            [keyWindow addSubview:publishView];
+        }];
+
         self.publishBtn = publishBtn;
         [self addSubview:_publishBtn];
         

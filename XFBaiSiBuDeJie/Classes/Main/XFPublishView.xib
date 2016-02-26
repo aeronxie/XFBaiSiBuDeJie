@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XFPublishView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="DNg-aj-WCU">
+                    <rect key="frame" x="-5" y="0.0" width="605" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-bz-tOV">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sye-wm-Vuo">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="r8h-yV-kVs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sye-wm-Vuo" firstAttribute="width" secondItem="REZ-bz-tOV" secondAttribute="width" id="2Kt-W2-dFX"/>
+                        <constraint firstAttribute="height" constant="45" id="GhF-eA-7UJ"/>
+                        <constraint firstAttribute="bottom" secondItem="sye-wm-Vuo" secondAttribute="bottom" id="L3P-Vl-ch0"/>
+                        <constraint firstItem="sye-wm-Vuo" firstAttribute="leading" secondItem="REZ-bz-tOV" secondAttribute="leading" id="Z2s-Vi-Fic"/>
+                        <constraint firstItem="sye-wm-Vuo" firstAttribute="height" secondItem="REZ-bz-tOV" secondAttribute="height" id="dRx-Sy-vfk"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="YeK-7L-Vs1">
+                    <rect key="frame" x="200" y="-40" width="200" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="XsN-Zv-lsC"/>
+                        <constraint firstAttribute="width" constant="200" id="epp-hn-JXQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YeK-7L-Vs1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-40" id="6WK-Fj-3FK"/>
+                <constraint firstAttribute="trailing" secondItem="DNg-aj-WCU" secondAttribute="trailing" id="DD3-Ti-hai"/>
+                <constraint firstItem="REZ-bz-tOV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FLp-NY-Isz"/>
+                <constraint firstItem="DNg-aj-WCU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kfk-iz-e5K"/>
+                <constraint firstItem="YeK-7L-Vs1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KzT-Rb-02M"/>
+                <constraint firstAttribute="bottom" secondItem="DNg-aj-WCU" secondAttribute="bottom" id="Wme-It-4SJ"/>
+                <constraint firstAttribute="trailing" secondItem="REZ-bz-tOV" secondAttribute="trailing" id="sfA-IR-s8G"/>
+                <constraint firstItem="DNg-aj-WCU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-5" id="xf3-P0-chq"/>
+                <constraint firstAttribute="bottom" secondItem="REZ-bz-tOV" secondAttribute="bottom" id="yhk-ie-P43"/>
+            </constraints>
+            <connections>
+                <outlet property="slogaTop" destination="6WK-Fj-3FK" id="X2R-3y-qWV"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_slogan" width="202" height="20"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+    </resources>
+</document>
