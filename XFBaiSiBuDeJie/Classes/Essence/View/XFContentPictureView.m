@@ -33,8 +33,10 @@
     
     [super setTopicModel:topicModel];
     
+    [self.progrssView setProgress:0.0 animated:NO];
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topicModel.image2] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        self.bigPicBtn.hidden = YES;
         self.baisiView.hidden = NO;
         CGFloat progress = 1.0 * receivedSize / expectedSize;
         self.progrssView.hidden = NO;
@@ -68,7 +70,7 @@
     
     
     self.gifView.hidden = ![topicModel.image2.pathExtension.lowercaseString isEqualToString:@"gif"];
-    
+    //self.bigPicBtn.hidden = NO;
  
 }
 
