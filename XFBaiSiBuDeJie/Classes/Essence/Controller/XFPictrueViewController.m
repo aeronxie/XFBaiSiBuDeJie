@@ -54,6 +54,7 @@ static NSString *const CellID = @"topic";
 //获取最新数据
 -(void)getNewData {
     self.page = 0;//清空
+    [self.topicFrames removeAllObjects];
     @weakify(self)
     [self.tool getTalkDataWithArrayType:TopicTypePicture block:^(id json, NSString *maxtime) {
         @strongify(self)
@@ -72,7 +73,7 @@ static NSString *const CellID = @"topic";
 //获取更多数据
 -(void)getMoreData {
     //计算页码
-    NSInteger page = self.page+1;    
+    NSInteger page = self.page+1;
     @weakify(self)
     [self.tool getTalkDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypePicture block:^(id json,NSString *maxtime) {
         @strongify(self)

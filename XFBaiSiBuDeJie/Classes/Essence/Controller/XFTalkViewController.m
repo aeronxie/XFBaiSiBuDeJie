@@ -56,6 +56,7 @@ static NSString *const CellID = @"topic";
 //获取最新数据
 -(void)getNewData {
     self.page = 0;//清空
+    [self.topicsFrame removeAllObjects];
      @weakify(self)
     [self.tool getTalkDataWithArrayType:TopicTypeTalk block:^(id json, NSString *maxtime) {
         @strongify(self)
