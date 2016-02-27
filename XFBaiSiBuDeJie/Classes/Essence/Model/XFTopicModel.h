@@ -30,8 +30,13 @@
 
 
 /****** 图片相关 ******/
-/** 配图 */
-@property (copy, nonatomic) NSString *image2;
+/** 小图片*/
+@property (nonatomic, copy) NSString *small_image;
+/** 中图片*/
+@property (nonatomic, copy) NSString *middle_image;
+/** 大图片 */
+@property (nonatomic, copy) NSString *large_image;
+
 /** 是否为gif图片 */
 @property (assign, nonatomic) BOOL is_gif;
 /** 视频或图片类型帖子的宽度 */
@@ -55,5 +60,9 @@
 
 /****** 是否为大图 ******/
 @property (assign, nonatomic, getter=isBigImage) BOOL bigImage;
+
+
+/** 图片的下载进度 */
+@property (nonatomic, assign) CGFloat pictureProgress;
 
 @end

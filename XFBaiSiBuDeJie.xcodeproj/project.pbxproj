@@ -54,6 +54,7 @@
 		65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */; };
 		65FAABB31C80CA6F00A3C971 /* XFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB11C80CA6F00A3C971 /* XFPublishView.m */; };
 		65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */; };
+		65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,8 @@
 		65FAABB01C80CA6F00A3C971 /* XFPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPublishView.h; sourceTree = "<group>"; };
 		65FAABB11C80CA6F00A3C971 /* XFPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFPublishView.m; sourceTree = "<group>"; };
 		65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFPublishView.xib; sourceTree = "<group>"; };
+		65FAABB51C8155A700A3C971 /* XFDetailPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDetailPictureController.h; sourceTree = "<group>"; };
+		65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDetailPictureController.m; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF97E68F796933B40822AB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,6 +351,8 @@
 				65A284631C7995BD00D8031B /* XFTalkViewController.m */,
 				65A284651C799A9400D8031B /* XFAllViewController.h */,
 				65A284661C799A9400D8031B /* XFAllViewController.m */,
+				65FAABB51C8155A700A3C971 /* XFDetailPictureController.h */,
+				65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -675,6 +680,7 @@
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
 				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
 				65A284611C79958800D8031B /* XFVideoViewController.m in Sources */,
+				65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */,
 				652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */,
 				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,

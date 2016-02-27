@@ -11,6 +11,7 @@
 #import "DALabeledCircularProgressView.h"
 #import "XFTopicModel.h"
 #import "UIImageView+WebCache.h"
+#import "XFDetailPictureController.h"
 
 
 @interface XFContentPictureView ()
@@ -29,13 +30,27 @@
     
 }
 
+- (void)awakeFromNib
+{
+    self.autoresizingMask = UIViewAutoresizingNone;
+    // 给图片添加监听器
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)]];
+}
+
+-(void)showPicture {
+    
+    XFDetailPictureController *showPicVc = [[XFDetailPictureController alloc]init];
+    showPicVc.topic = self.topicModel;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPicVc animated:YES completion:nil];
+    
+}
+
 -(void)setTopicModel:(XFTopicModel *)topicModel {
     
     [super setTopicModel:topicModel];
-    
     [self.progrssView setProgress:0.0 animated:NO];
-    
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:topicModel.image2] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:topicModel.middle_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         self.bigPicBtn.hidden = YES;
         self.baisiView.hidden = NO;
         CGFloat progress = 1.0 * receivedSize / expectedSize;
@@ -69,9 +84,13 @@
     }];
     
     
-    self.gifView.hidden = ![topicModel.image2.pathExtension.lowercaseString isEqualToString:@"gif"];
-    //self.bigPicBtn.hidden = NO;
+    self.gifView.hidden = ![topicModel.middle_image.pathExtension.lowercaseString isEqualToString:@"gif"];
+    
  
 }
 
+- (IBAction)bigBtn:(UIButton *)sender {
+    
+    [self showPicture];
+}
 @end

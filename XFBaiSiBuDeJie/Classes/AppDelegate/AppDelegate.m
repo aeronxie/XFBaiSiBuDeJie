@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "XFTabBarViewController.h"
 #import "XFGuideView.h"
+#import "SDWebImageManager.h"
 
 @interface AppDelegate ()
 
@@ -53,6 +54,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//当收到Received memory warning.会调用次方法
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    SDWebImageManager *mgr = [SDWebImageManager sharedManager];
+    //取消下载
+    [mgr cancelAll];
+    //清空缓存
+    [mgr.imageCache clearMemory];
+
 }
 
 //是否显示引导页

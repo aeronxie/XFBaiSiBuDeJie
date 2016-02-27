@@ -29,6 +29,9 @@
                         <constraint firstAttribute="height" constant="45" id="8mX-OB-fnn"/>
                     </constraints>
                     <state key="normal" title="点击查看全图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
+                    <connections>
+                        <action selector="bigBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="gAP-va-rXB"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-hd-glB">
                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
