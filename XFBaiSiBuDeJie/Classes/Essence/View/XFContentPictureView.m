@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *bigPicBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *baisiView;
 @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progrssView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -41,16 +42,16 @@
 -(void)showPicture {
     
     XFDetailPictureController *showPicVc = [[XFDetailPictureController alloc]init];
-    showPicVc.topic = self.topicModel;
+    showPicVc.topic = self.topic;
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPicVc animated:YES completion:nil];
     
 }
 
--(void)setTopicModel:(XFTopicModel *)topicModel {
-    
-    [super setTopicModel:topicModel];
+-(void)setTopic:(XFTopicModel *)topic {
+    _topic = topic;
+
     [self.progrssView setProgress:0.0 animated:NO];
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:topicModel.middle_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.middle_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         self.bigPicBtn.hidden = YES;
         self.baisiView.hidden = NO;
         CGFloat progress = 1.0 * receivedSize / expectedSize;
@@ -64,7 +65,7 @@
         self.baisiView.hidden = YES;
         
         //判断是不是大图
-        if (topicModel.isBigImage) {
+        if (topic.isBigImage) {
             //如果是的话，则截出图片的最上方铺满contentView
             // 开启图形上下文
             UIGraphicsBeginImageContextWithOptions(self.imageView.size, YES, 0.0);
@@ -84,7 +85,7 @@
     }];
     
     
-    self.gifView.hidden = ![topicModel.middle_image.pathExtension.lowercaseString isEqualToString:@"gif"];
+    self.gifView.hidden = ![topic.middle_image.pathExtension.lowercaseString isEqualToString:@"gif"];
     
  
 }

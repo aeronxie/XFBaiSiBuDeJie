@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class XFTopicModel;
+
 @interface XFContentVoiceView : UIView
+
+@property (nonatomic,strong) XFTopicModel *topic;
+
++(instancetype)voiceView;
 
 @end

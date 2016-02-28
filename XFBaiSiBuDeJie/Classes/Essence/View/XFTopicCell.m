@@ -11,7 +11,6 @@
 #import "XFContentPictureView.h"
 #import "XFContentVideoView.h"
 #import "XFContentVoiceView.h"
-#import "XFContentView.h"
 
 @interface XFTopicCell ()
 
@@ -46,17 +45,19 @@
         [self.commenBtn setTitle:[NSString stringWithFormat:@"%ld",topic.comment] forState:UIControlStateNormal];
     
     
-    XFContentView *contentView = nil;
     if (topic.type == TopicTypePicture) {
-        contentView = self.pictureView;
+        self.pictureView.topic = topic;
+        self.pictureView.frame  = topicFrame.contentViewFrame;
         self.voiceView.hidden = YES;
         self.videoView.hidden = YES;
     } else if (topic.type == TopicTypeVideo) {
-        //contentView = self.videoView;
+        self.videoView.topic = topic;
+        self.videoView.frame  = topicFrame.contentViewFrame;
         self.pictureView.hidden = YES;
         self.voiceView.hidden = YES;
     } else if (topic.type == TopicTypeVoice) {
-        //contentView = self.voiceView;
+        self.voiceView.topic = topic;
+        self.voiceView.frame  = topicFrame.contentViewFrame;
         self.pictureView.hidden = YES;
         self.videoView.hidden = YES;
     } else {
@@ -64,10 +65,6 @@
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
     }
-    contentView.hidden = NO;
-    contentView.frame = topicFrame.contentViewFrame;
-    contentView.topicModel = topic;
-    
 }
 
 
@@ -109,8 +106,8 @@
 -(XFContentVideoView *)videoView
 {
     if (!_videoView) {
-        XFContentVideoView *videoView = [[XFContentVideoView alloc]init];
-        [self.contentView addSubview:videoView];
+        _videoView = [XFContentVideoView videoView];
+        [self.contentView addSubview:_videoView];
     }
     return _videoView;
 }
@@ -118,8 +115,8 @@
 - (XFContentVoiceView *)voiceView
 {
     if (!_voiceView) {
-        XFContentVoiceView *voiceView = [[XFContentVoiceView alloc]init];
-        [self.contentView addSubview:voiceView];
+        _voiceView = [XFContentVoiceView voiceView];
+        [self.contentView addSubview:_voiceView];
     }
     return _voiceView;
 }

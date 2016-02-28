@@ -69,8 +69,8 @@
                 <outlet property="baisiView" destination="eeh-iV-J08" id="8PF-My-qWw"/>
                 <outlet property="bigPicBtn" destination="yka-Az-77O" id="sJf-Jt-gSM"/>
                 <outlet property="gifView" destination="OGT-hd-glB" id="D3h-Mt-Xm3"/>
-                <outlet property="imageView" destination="v9Z-7Z-WiY" id="rCa-51-s5O"/>
-                <outlet property="progrssView" destination="Mls-5G-lUn" id="fmL-Un-tzb"/>
+                <outlet property="imageView" destination="v9Z-7Z-WiY" id="H4o-tk-yxq"/>
+                <outlet property="progrssView" destination="Mls-5G-lUn" id="8lp-gc-QXV"/>
             </connections>
             <point key="canvasLocation" x="93.5" y="-308"/>
         </view>

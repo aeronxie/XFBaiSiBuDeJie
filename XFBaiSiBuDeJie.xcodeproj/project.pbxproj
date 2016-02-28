@@ -18,7 +18,6 @@
 		65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */; };
 		65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */; };
 		65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */; };
-		65752E3E1C7DAB9B0005CCB2 /* XFContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */; };
 		65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845A1C79956800D8031B /* XFVocieViewController.m */; };
 		65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845D1C79957D00D8031B /* XFPictrueViewController.m */; };
 		65A284611C79958800D8031B /* XFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284601C79958800D8031B /* XFVideoViewController.m */; };
@@ -28,6 +27,8 @@
 		65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846C1C7B33E700D8031B /* XFTopicModel.m */; };
 		65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846F1C7B355D00D8031B /* XFTopicCell.m */; };
 		65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A284701C7B355D00D8031B /* XFTopicCell.xib */; };
+		65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */; };
+		65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
@@ -78,8 +79,6 @@
 		65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVoiceView.m; sourceTree = "<group>"; };
 		65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentVideoView.h; sourceTree = "<group>"; };
 		65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVideoView.m; sourceTree = "<group>"; };
-		65752E3C1C7DAB9B0005CCB2 /* XFContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentView.h; sourceTree = "<group>"; };
-		65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentView.m; sourceTree = "<group>"; };
 		65A284591C79956800D8031B /* XFVocieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFVocieViewController.h; sourceTree = "<group>"; };
 		65A2845A1C79956800D8031B /* XFVocieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVocieViewController.m; sourceTree = "<group>"; };
 		65A2845C1C79957D00D8031B /* XFPictrueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPictrueViewController.h; sourceTree = "<group>"; };
@@ -97,6 +96,8 @@
 		65A2846E1C7B355D00D8031B /* XFTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTopicCell.h; sourceTree = "<group>"; };
 		65A2846F1C7B355D00D8031B /* XFTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTopicCell.m; sourceTree = "<group>"; };
 		65A284701C7B355D00D8031B /* XFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFTopicCell.xib; sourceTree = "<group>"; };
+		65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVoiceView.xib; sourceTree = "<group>"; };
+		65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVideoView.xib; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -388,10 +389,10 @@
 				65752E311C7C9E3F0005CCB2 /* XFContentPictureView.xib */,
 				65752E361C7D9DBC0005CCB2 /* XFContentVoiceView.h */,
 				65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */,
+				65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */,
 				65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */,
 				65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */,
-				65752E3C1C7DAB9B0005CCB2 /* XFContentView.h */,
-				65752E3D1C7DAB9B0005CCB2 /* XFContentView.m */,
+				65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -603,9 +604,11 @@
 				65752E321C7C9E3F0005CCB2 /* XFContentPictureView.xib in Resources */,
 				65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */,
 				65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */,
+				65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */,
 				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
+				65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */,
 				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
 				65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */,
 				65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */,
@@ -689,7 +692,6 @@
 				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
-				65752E3E1C7DAB9B0005CCB2 /* XFContentView.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
