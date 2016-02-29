@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2631C785F620027B71B /* XFLoginViewController.m */; };
-		652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2641C785F620027B71B /* XFLoginViewController.xib */; };
-		652CB2691C789E210027B71B /* XFShowWordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2681C789E210027B71B /* XFShowWordBtn.m */; };
-		652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB26B1C78AABF0027B71B /* XFTextfield.m */; };
 		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
 		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
 		65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */; };
@@ -31,44 +27,41 @@
 		65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */; };
 		65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11751C8362C700E994F1 /* XFUserModel.m */; };
 		65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11781C8362D300E994F1 /* XFCommentModel.m */; };
+		65AD11941C84D18600E994F1 /* XFConcernViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11811C84D18600E994F1 /* XFConcernViewController.xib */; };
+		65AD11951C84D18600E994F1 /* XFRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11831C84D18600E994F1 /* XFRecommendViewController.m */; };
+		65AD11961C84D18600E994F1 /* XFRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11841C84D18600E994F1 /* XFRecommendViewController.xib */; };
+		65AD11971C84D18600E994F1 /* XFCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11871C84D18600E994F1 /* XFCategoryModel.m */; };
+		65AD11981C84D18600E994F1 /* XFMainTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11891C84D18600E994F1 /* XFMainTableModel.m */; };
+		65AD11991C84D18700E994F1 /* XFRcommandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD118C1C84D18600E994F1 /* XFRcommandDataTool.m */; };
+		65AD119A1C84D18700E994F1 /* XFCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD118F1C84D18600E994F1 /* XFCategoryCell.m */; };
+		65AD119B1C84D18700E994F1 /* XFCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11901C84D18600E994F1 /* XFCategoryCell.xib */; };
+		65AD119C1C84D18700E994F1 /* XFMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11921C84D18600E994F1 /* XFMainTableCell.m */; };
+		65AD119D1C84D18700E994F1 /* XFMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11931C84D18600E994F1 /* XFMainTableCell.xib */; };
+		65AD11A01C84D1CB00E994F1 /* XFConcernViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD119F1C84D1CB00E994F1 /* XFConcernViewController.m */; };
+		65AD11A41C84D1F500E994F1 /* XFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11A21C84D1F500E994F1 /* XFLoginViewController.m */; };
+		65AD11A51C84D1F500E994F1 /* XFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11A31C84D1F500E994F1 /* XFLoginViewController.xib */; };
+		65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11A71C84D23500E994F1 /* XFTextfield.m */; };
+		65AD11AB1C84D26C00E994F1 /* XFShowWordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11AA1C84D26C00E994F1 /* XFShowWordBtn.m */; };
+		65AD11AF1C84D2B300E994F1 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11AE1C84D2B300E994F1 /* HttpTool.m */; };
+		65AD11BB1C84D32F00E994F1 /* XFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B21C84D32F00E994F1 /* XFNavigationController.m */; };
+		65AD11BC1C84D32F00E994F1 /* XFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B41C84D32F00E994F1 /* XFTabBarViewController.m */; };
+		65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B71C84D32F00E994F1 /* XFPublishView.m */; };
+		65AD11BE1C84D32F00E994F1 /* XFPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11B81C84D32F00E994F1 /* XFPublishView.xib */; };
+		65AD11BF1C84D32F00E994F1 /* XFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11BA1C84D32F00E994F1 /* XFTabBar.m */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
 		65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759C1C74AB4C0017DB20 /* LaunchScreen.storyboard */; };
-		65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA75FA1C74C18A0017DB20 /* XFConcernViewController.m */; };
 		65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76011C74C18A0017DB20 /* XFEssenceViewController.m */; };
 		65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76081C74C18A0017DB20 /* XFLatestViewController.m */; };
-		65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA760E1C74C18A0017DB20 /* XFTabBarViewController.m */; };
 		65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76121C74C18A0017DB20 /* XFMeViewController.m */; };
 		65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA761D1C74C1A70017DB20 /* AppDelegate.m */; };
-		65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76221C74C2010017DB20 /* XFTabBar.m */; };
 		65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76291C74C54E0017DB20 /* UIView+Extension.m */; };
-		65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA762D1C75D7470017DB20 /* XFNavigationController.m */; };
-		65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76301C760B790017DB20 /* XFRecommendViewController.m */; };
-		65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76311C760B790017DB20 /* XFRecommendViewController.xib */; };
-		65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */; };
-		65EA76391C7615480017DB20 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76381C7615480017DB20 /* HttpTool.m */; };
-		65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */; };
-		65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA763E1C761FD10017DB20 /* XFCategoryModel.m */; };
-		65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76411C76FB410017DB20 /* XFCategoryCell.m */; };
-		65EA76441C76FB410017DB20 /* XFCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76421C76FB410017DB20 /* XFCategoryCell.xib */; };
-		65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76461C770DDC0017DB20 /* XFMainTableCell.m */; };
-		65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */; };
-		65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */; };
-		65FAABB31C80CA6F00A3C971 /* XFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB11C80CA6F00A3C971 /* XFPublishView.m */; };
-		65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */; };
 		65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		652CB2621C785F620027B71B /* XFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoginViewController.h; sourceTree = "<group>"; };
-		652CB2631C785F620027B71B /* XFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoginViewController.m; sourceTree = "<group>"; };
-		652CB2641C785F620027B71B /* XFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFLoginViewController.xib; sourceTree = "<group>"; };
-		652CB2671C789E210027B71B /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFShowWordBtn.h; path = ../../Concern/View/XFShowWordBtn.h; sourceTree = "<group>"; };
-		652CB2681C789E210027B71B /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFShowWordBtn.m; path = ../../Concern/View/XFShowWordBtn.m; sourceTree = "<group>"; };
-		652CB26A1C78AABF0027B71B /* XFTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTextfield.h; sourceTree = "<group>"; };
-		652CB26B1C78AABF0027B71B /* XFTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextfield.m; sourceTree = "<group>"; };
 		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
 		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
 		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
@@ -104,52 +97,59 @@
 		65AD11751C8362C700E994F1 /* XFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFUserModel.m; sourceTree = "<group>"; };
 		65AD11771C8362D300E994F1 /* XFCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentModel.h; sourceTree = "<group>"; };
 		65AD11781C8362D300E994F1 /* XFCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentModel.m; sourceTree = "<group>"; };
+		65AD11811C84D18600E994F1 /* XFConcernViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFConcernViewController.xib; sourceTree = "<group>"; };
+		65AD11821C84D18600E994F1 /* XFRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFRecommendViewController.h; sourceTree = "<group>"; };
+		65AD11831C84D18600E994F1 /* XFRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFRecommendViewController.m; sourceTree = "<group>"; };
+		65AD11841C84D18600E994F1 /* XFRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFRecommendViewController.xib; sourceTree = "<group>"; };
+		65AD11861C84D18600E994F1 /* XFCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCategoryModel.h; sourceTree = "<group>"; };
+		65AD11871C84D18600E994F1 /* XFCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCategoryModel.m; sourceTree = "<group>"; };
+		65AD11881C84D18600E994F1 /* XFMainTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFMainTableModel.h; sourceTree = "<group>"; };
+		65AD11891C84D18600E994F1 /* XFMainTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFMainTableModel.m; sourceTree = "<group>"; };
+		65AD118B1C84D18600E994F1 /* XFRcommandDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFRcommandDataTool.h; sourceTree = "<group>"; };
+		65AD118C1C84D18600E994F1 /* XFRcommandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFRcommandDataTool.m; sourceTree = "<group>"; };
+		65AD118E1C84D18600E994F1 /* XFCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCategoryCell.h; sourceTree = "<group>"; };
+		65AD118F1C84D18600E994F1 /* XFCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCategoryCell.m; sourceTree = "<group>"; };
+		65AD11901C84D18600E994F1 /* XFCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFCategoryCell.xib; sourceTree = "<group>"; };
+		65AD11911C84D18600E994F1 /* XFMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFMainTableCell.h; sourceTree = "<group>"; };
+		65AD11921C84D18600E994F1 /* XFMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFMainTableCell.m; sourceTree = "<group>"; };
+		65AD11931C84D18600E994F1 /* XFMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFMainTableCell.xib; sourceTree = "<group>"; };
+		65AD119E1C84D1CB00E994F1 /* XFConcernViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFConcernViewController.h; sourceTree = "<group>"; };
+		65AD119F1C84D1CB00E994F1 /* XFConcernViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFConcernViewController.m; sourceTree = "<group>"; };
+		65AD11A11C84D1F500E994F1 /* XFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoginViewController.h; sourceTree = "<group>"; };
+		65AD11A21C84D1F500E994F1 /* XFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoginViewController.m; sourceTree = "<group>"; };
+		65AD11A31C84D1F500E994F1 /* XFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFLoginViewController.xib; sourceTree = "<group>"; };
+		65AD11A61C84D23500E994F1 /* XFTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTextfield.h; sourceTree = "<group>"; };
+		65AD11A71C84D23500E994F1 /* XFTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextfield.m; sourceTree = "<group>"; };
+		65AD11A91C84D26C00E994F1 /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFShowWordBtn.h; sourceTree = "<group>"; };
+		65AD11AA1C84D26C00E994F1 /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFShowWordBtn.m; sourceTree = "<group>"; };
+		65AD11AD1C84D2B300E994F1 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		65AD11AE1C84D2B300E994F1 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		65AD11B11C84D32F00E994F1 /* XFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFNavigationController.h; sourceTree = "<group>"; };
+		65AD11B21C84D32F00E994F1 /* XFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFNavigationController.m; sourceTree = "<group>"; };
+		65AD11B31C84D32F00E994F1 /* XFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTabBarViewController.h; sourceTree = "<group>"; };
+		65AD11B41C84D32F00E994F1 /* XFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTabBarViewController.m; sourceTree = "<group>"; };
+		65AD11B61C84D32F00E994F1 /* XFPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPublishView.h; sourceTree = "<group>"; };
+		65AD11B71C84D32F00E994F1 /* XFPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFPublishView.m; sourceTree = "<group>"; };
+		65AD11B81C84D32F00E994F1 /* XFPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFPublishView.xib; sourceTree = "<group>"; };
+		65AD11B91C84D32F00E994F1 /* XFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTabBar.h; sourceTree = "<group>"; };
+		65AD11BA1C84D32F00E994F1 /* XFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTabBar.m; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65EA759A1C74AB4C0017DB20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65EA759D1C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65EA759F1C74AB4C0017DB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65EA75F91C74C18A0017DB20 /* XFConcernViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFConcernViewController.h; sourceTree = "<group>"; };
-		65EA75FA1C74C18A0017DB20 /* XFConcernViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFConcernViewController.m; sourceTree = "<group>"; };
 		65EA76001C74C18A0017DB20 /* XFEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFEssenceViewController.h; sourceTree = "<group>"; };
 		65EA76011C74C18A0017DB20 /* XFEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFEssenceViewController.m; sourceTree = "<group>"; };
 		65EA76071C74C18A0017DB20 /* XFLatestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLatestViewController.h; sourceTree = "<group>"; };
 		65EA76081C74C18A0017DB20 /* XFLatestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLatestViewController.m; sourceTree = "<group>"; };
-		65EA760D1C74C18A0017DB20 /* XFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTabBarViewController.h; sourceTree = "<group>"; };
-		65EA760E1C74C18A0017DB20 /* XFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTabBarViewController.m; sourceTree = "<group>"; };
 		65EA76111C74C18A0017DB20 /* XFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFMeViewController.h; sourceTree = "<group>"; };
 		65EA76121C74C18A0017DB20 /* XFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFMeViewController.m; sourceTree = "<group>"; };
 		65EA761C1C74C1A70017DB20 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65EA761D1C74C1A70017DB20 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65EA76211C74C2010017DB20 /* XFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTabBar.h; sourceTree = "<group>"; };
-		65EA76221C74C2010017DB20 /* XFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTabBar.m; sourceTree = "<group>"; };
 		65EA76281C74C54E0017DB20 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		65EA76291C74C54E0017DB20 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		65EA762B1C74C5840017DB20 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		65EA762C1C75D7470017DB20 /* XFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFNavigationController.h; path = ../../../../Documents/XFNavigationController.h; sourceTree = "<group>"; };
-		65EA762D1C75D7470017DB20 /* XFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFNavigationController.m; path = ../../../../Documents/XFNavigationController.m; sourceTree = "<group>"; };
-		65EA762F1C760B790017DB20 /* XFRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFRecommendViewController.h; path = ../../../../../Documents/XFRecommendViewController.h; sourceTree = "<group>"; };
-		65EA76301C760B790017DB20 /* XFRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFRecommendViewController.m; path = ../../../../../Documents/XFRecommendViewController.m; sourceTree = "<group>"; };
-		65EA76311C760B790017DB20 /* XFRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFRecommendViewController.xib; path = ../../../../../Documents/XFRecommendViewController.xib; sourceTree = "<group>"; };
-		65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFConcernViewController.xib; path = ../../../../../Documents/XFConcernViewController.xib; sourceTree = "<group>"; };
-		65EA76371C7615480017DB20 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpTool.h; path = ../../../../Documents/HttpTool.h; sourceTree = "<group>"; };
-		65EA76381C7615480017DB20 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpTool.m; path = ../../../../Documents/HttpTool.m; sourceTree = "<group>"; };
-		65EA763A1C761B0B0017DB20 /* XFRcommandDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFRcommandDataTool.h; path = ../../../../../Documents/XFRcommandDataTool.h; sourceTree = "<group>"; };
-		65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFRcommandDataTool.m; path = ../../../../../Documents/XFRcommandDataTool.m; sourceTree = "<group>"; };
-		65EA763D1C761FD10017DB20 /* XFCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFCategoryModel.h; path = ../../../../../Documents/XFCategoryModel.h; sourceTree = "<group>"; };
-		65EA763E1C761FD10017DB20 /* XFCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFCategoryModel.m; path = ../../../../../Documents/XFCategoryModel.m; sourceTree = "<group>"; };
-		65EA76401C76FB410017DB20 /* XFCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFCategoryCell.h; path = ../../../../../Documents/XFCategoryCell.h; sourceTree = "<group>"; };
-		65EA76411C76FB410017DB20 /* XFCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFCategoryCell.m; path = ../../../../../Documents/XFCategoryCell.m; sourceTree = "<group>"; };
-		65EA76421C76FB410017DB20 /* XFCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFCategoryCell.xib; path = ../../../../../Documents/XFCategoryCell.xib; sourceTree = "<group>"; };
-		65EA76451C770DDC0017DB20 /* XFMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMainTableCell.h; path = ../../../../../Documents/XFMainTableCell.h; sourceTree = "<group>"; };
-		65EA76461C770DDC0017DB20 /* XFMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMainTableCell.m; path = ../../../../../Documents/XFMainTableCell.m; sourceTree = "<group>"; };
-		65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFMainTableCell.xib; path = ../../../../../Documents/XFMainTableCell.xib; sourceTree = "<group>"; };
-		65EA764A1C7711AF0017DB20 /* XFMainTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMainTableModel.h; path = ../../../../../Documents/XFMainTableModel.h; sourceTree = "<group>"; };
-		65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMainTableModel.m; path = ../../../../../Documents/XFMainTableModel.m; sourceTree = "<group>"; };
-		65FAABB01C80CA6F00A3C971 /* XFPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPublishView.h; sourceTree = "<group>"; };
-		65FAABB11C80CA6F00A3C971 /* XFPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFPublishView.m; sourceTree = "<group>"; };
-		65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFPublishView.xib; sourceTree = "<group>"; };
 		65FAABB51C8155A700A3C971 /* XFDetailPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDetailPictureController.h; sourceTree = "<group>"; };
 		65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDetailPictureController.m; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,11 +188,94 @@
 		652CB26E1C78E1830027B71B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				652CB2671C789E210027B71B /* XFShowWordBtn.h */,
-				652CB2681C789E210027B71B /* XFShowWordBtn.m */,
+				65AD11A91C84D26C00E994F1 /* XFShowWordBtn.h */,
+				65AD11AA1C84D26C00E994F1 /* XFShowWordBtn.m */,
 				652CB26F1C78E1B20027B71B /* XFGuideView.h */,
 				652CB2701C78E1B20027B71B /* XFGuideView.m */,
 				652CB2721C78E1C00027B71B /* XFGuideView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65AD11801C84D18600E994F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65AD119E1C84D1CB00E994F1 /* XFConcernViewController.h */,
+				65AD119F1C84D1CB00E994F1 /* XFConcernViewController.m */,
+				65AD11811C84D18600E994F1 /* XFConcernViewController.xib */,
+				65AD11821C84D18600E994F1 /* XFRecommendViewController.h */,
+				65AD11831C84D18600E994F1 /* XFRecommendViewController.m */,
+				65AD11841C84D18600E994F1 /* XFRecommendViewController.xib */,
+				65AD11A11C84D1F500E994F1 /* XFLoginViewController.h */,
+				65AD11A21C84D1F500E994F1 /* XFLoginViewController.m */,
+				65AD11A31C84D1F500E994F1 /* XFLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65AD11851C84D18600E994F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65AD11861C84D18600E994F1 /* XFCategoryModel.h */,
+				65AD11871C84D18600E994F1 /* XFCategoryModel.m */,
+				65AD11881C84D18600E994F1 /* XFMainTableModel.h */,
+				65AD11891C84D18600E994F1 /* XFMainTableModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65AD118A1C84D18600E994F1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				65AD118B1C84D18600E994F1 /* XFRcommandDataTool.h */,
+				65AD118C1C84D18600E994F1 /* XFRcommandDataTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		65AD118D1C84D18600E994F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65AD11A61C84D23500E994F1 /* XFTextfield.h */,
+				65AD11A71C84D23500E994F1 /* XFTextfield.m */,
+				65AD118E1C84D18600E994F1 /* XFCategoryCell.h */,
+				65AD118F1C84D18600E994F1 /* XFCategoryCell.m */,
+				65AD11901C84D18600E994F1 /* XFCategoryCell.xib */,
+				65AD11911C84D18600E994F1 /* XFMainTableCell.h */,
+				65AD11921C84D18600E994F1 /* XFMainTableCell.m */,
+				65AD11931C84D18600E994F1 /* XFMainTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65AD11AC1C84D2B300E994F1 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				65AD11AD1C84D2B300E994F1 /* HttpTool.h */,
+				65AD11AE1C84D2B300E994F1 /* HttpTool.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		65AD11B01C84D32F00E994F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65AD11B11C84D32F00E994F1 /* XFNavigationController.h */,
+				65AD11B21C84D32F00E994F1 /* XFNavigationController.m */,
+				65AD11B31C84D32F00E994F1 /* XFTabBarViewController.h */,
+				65AD11B41C84D32F00E994F1 /* XFTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65AD11B51C84D32F00E994F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65AD11B61C84D32F00E994F1 /* XFPublishView.h */,
+				65AD11B71C84D32F00E994F1 /* XFPublishView.m */,
+				65AD11B81C84D32F00E994F1 /* XFPublishView.xib */,
+				65AD11B91C84D32F00E994F1 /* XFTabBar.h */,
+				65AD11BA1C84D32F00E994F1 /* XFTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,7 +329,7 @@
 				65EA76051C74C18A0017DB20 /* Latest */,
 				65EA760C1C74C18A0017DB20 /* Main */,
 				65EA760F1C74C18A0017DB20 /* Me */,
-				65EA76361C7615250017DB20 /* Lib */,
+				65AD11AC1C84D2B300E994F1 /* Lib */,
 				65EA76161C74C18A0017DB20 /* Other */,
 			);
 			path = Classes;
@@ -273,63 +356,12 @@
 		65EA75F71C74C18A0017DB20 /* Concern */ = {
 			isa = PBXGroup;
 			children = (
-				65EA75F81C74C18A0017DB20 /* Controller */,
-				65EA75FB1C74C18A0017DB20 /* Model */,
-				65EA75FC1C74C18A0017DB20 /* Tool */,
-				65EA75FD1C74C18A0017DB20 /* View */,
+				65AD11801C84D18600E994F1 /* Controller */,
+				65AD11851C84D18600E994F1 /* Model */,
+				65AD118A1C84D18600E994F1 /* Tool */,
+				65AD118D1C84D18600E994F1 /* View */,
 			);
 			path = Concern;
-			sourceTree = "<group>";
-		};
-		65EA75F81C74C18A0017DB20 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				65EA75F91C74C18A0017DB20 /* XFConcernViewController.h */,
-				65EA75FA1C74C18A0017DB20 /* XFConcernViewController.m */,
-				65EA76341C760BBE0017DB20 /* XFConcernViewController.xib */,
-				65EA762F1C760B790017DB20 /* XFRecommendViewController.h */,
-				65EA76301C760B790017DB20 /* XFRecommendViewController.m */,
-				65EA76311C760B790017DB20 /* XFRecommendViewController.xib */,
-				652CB2621C785F620027B71B /* XFLoginViewController.h */,
-				652CB2631C785F620027B71B /* XFLoginViewController.m */,
-				652CB2641C785F620027B71B /* XFLoginViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		65EA75FB1C74C18A0017DB20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				65EA763D1C761FD10017DB20 /* XFCategoryModel.h */,
-				65EA763E1C761FD10017DB20 /* XFCategoryModel.m */,
-				65EA764A1C7711AF0017DB20 /* XFMainTableModel.h */,
-				65EA764B1C7711AF0017DB20 /* XFMainTableModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		65EA75FC1C74C18A0017DB20 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				65EA763A1C761B0B0017DB20 /* XFRcommandDataTool.h */,
-				65EA763B1C761B0B0017DB20 /* XFRcommandDataTool.m */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		65EA75FD1C74C18A0017DB20 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				65EA76401C76FB410017DB20 /* XFCategoryCell.h */,
-				65EA76411C76FB410017DB20 /* XFCategoryCell.m */,
-				65EA76421C76FB410017DB20 /* XFCategoryCell.xib */,
-				65EA76451C770DDC0017DB20 /* XFMainTableCell.h */,
-				65EA76461C770DDC0017DB20 /* XFMainTableCell.m */,
-				65EA76471C770DDC0017DB20 /* XFMainTableCell.xib */,
-				652CB26A1C78AABF0027B71B /* XFTextfield.h */,
-				652CB26B1C78AABF0027B71B /* XFTextfield.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		65EA75FE1C74C18A0017DB20 /* Essence */ = {
@@ -451,8 +483,8 @@
 		65EA760C1C74C18A0017DB20 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				65EA76201C74C1E70017DB20 /* View */,
-				65EA761F1C74C1DE0017DB20 /* Controller */,
+				65AD11B01C84D32F00E994F1 /* Controller */,
+				65AD11B51C84D32F00E994F1 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -506,38 +538,6 @@
 				65EA762B1C74C5840017DB20 /* PrefixHeader.pch */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		65EA761F1C74C1DE0017DB20 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				65EA760D1C74C18A0017DB20 /* XFTabBarViewController.h */,
-				65EA760E1C74C18A0017DB20 /* XFTabBarViewController.m */,
-				65EA762C1C75D7470017DB20 /* XFNavigationController.h */,
-				65EA762D1C75D7470017DB20 /* XFNavigationController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		65EA76201C74C1E70017DB20 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				65EA76211C74C2010017DB20 /* XFTabBar.h */,
-				65EA76221C74C2010017DB20 /* XFTabBar.m */,
-				65FAABB01C80CA6F00A3C971 /* XFPublishView.h */,
-				65FAABB11C80CA6F00A3C971 /* XFPublishView.m */,
-				65FAABB21C80CA6F00A3C971 /* XFPublishView.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		65EA76361C7615250017DB20 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				65EA76371C7615480017DB20 /* HttpTool.h */,
-				65EA76381C7615480017DB20 /* HttpTool.m */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		A665137DCAB793132FF0FD7E /* Frameworks */ = {
@@ -610,20 +610,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652CB2661C785F620027B71B /* XFLoginViewController.xib in Resources */,
 				65752E321C7C9E3F0005CCB2 /* XFContentPictureView.xib in Resources */,
-				65FAABB41C80CA6F00A3C971 /* XFPublishView.xib in Resources */,
+				65AD119D1C84D18700E994F1 /* XFMainTableCell.xib in Resources */,
+				65AD11941C84D18600E994F1 /* XFConcernViewController.xib in Resources */,
 				65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */,
 				65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */,
-				65EA76491C770DDC0017DB20 /* XFMainTableCell.xib in Resources */,
+				65AD11961C84D18600E994F1 /* XFRecommendViewController.xib in Resources */,
+				65AD11BE1C84D32F00E994F1 /* XFPublishView.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
 				65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */,
-				65EA76351C760BBE0017DB20 /* XFConcernViewController.xib in Resources */,
-				65EA76331C760B790017DB20 /* XFRecommendViewController.xib in Resources */,
+				65AD11A51C84D1F500E994F1 /* XFLoginViewController.xib in Resources */,
 				65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */,
 				65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */,
-				65EA76441C76FB410017DB20 /* XFCategoryCell.xib in Resources */,
+				65AD119B1C84D18700E994F1 /* XFCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,42 +683,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */,
+				65AD119A1C84D18700E994F1 /* XFCategoryCell.m in Sources */,
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
-				652CB26C1C78AABF0027B71B /* XFTextfield.m in Sources */,
-				65EA763F1C761FD10017DB20 /* XFCategoryModel.m in Sources */,
+				65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
-				65EA762E1C75D7470017DB20 /* XFNavigationController.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
-				65EA76171C74C18A0017DB20 /* XFConcernViewController.m in Sources */,
 				65A284611C79958800D8031B /* XFVideoViewController.m in Sources */,
+				65AD11BF1C84D32F00E994F1 /* XFTabBar.m in Sources */,
 				65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */,
-				652CB2651C785F620027B71B /* XFLoginViewController.m in Sources */,
-				65EA763C1C761B0B0017DB20 /* XFRcommandDataTool.m in Sources */,
+				65AD11951C84D18600E994F1 /* XFRecommendViewController.m in Sources */,
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,
-				65EA76481C770DDC0017DB20 /* XFMainTableCell.m in Sources */,
-				65FAABB31C80CA6F00A3C971 /* XFPublishView.m in Sources */,
-				65EA76321C760B790017DB20 /* XFRecommendViewController.m in Sources */,
 				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
+				65AD11AB1C84D26C00E994F1 /* XFShowWordBtn.m in Sources */,
 				65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
-				65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */,
-				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
+				65AD11BB1C84D32F00E994F1 /* XFNavigationController.m in Sources */,
+				65AD11AF1C84D2B300E994F1 /* HttpTool.m in Sources */,
 				65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */,
+				65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */,
+				65AD11A01C84D1CB00E994F1 /* XFConcernViewController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
+				65AD11BC1C84D32F00E994F1 /* XFTabBarViewController.m in Sources */,
 				65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */,
+				65AD11A41C84D1F500E994F1 /* XFLoginViewController.m in Sources */,
+				65AD11991C84D18700E994F1 /* XFRcommandDataTool.m in Sources */,
 				65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */,
-				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
 				65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */,
 				65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */,
-				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
-				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,
+				65AD11981C84D18600E994F1 /* XFMainTableModel.m in Sources */,
 				65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */,
-				652CB2691C789E210027B71B /* XFShowWordBtn.m in Sources */,
+				65AD11971C84D18600E994F1 /* XFCategoryModel.m in Sources */,
+				65AD119C1C84D18700E994F1 /* XFMainTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
