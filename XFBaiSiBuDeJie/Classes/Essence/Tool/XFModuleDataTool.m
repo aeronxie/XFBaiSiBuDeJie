@@ -13,7 +13,7 @@
 
 
 @implementation XFModuleDataTool
--(void)getTalkDataWithArrayType:(TopicType)type block:(void (^)(id json,id param))block {
+-(void)getDataWithArrayType:(TopicType)type block:(void (^)(id json,id param))block {
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
@@ -31,7 +31,7 @@
     }];
 }
 
--(void)getTalkDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block {
+-(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block {
     
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];

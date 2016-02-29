@@ -29,6 +29,8 @@
 		65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A284701C7B355D00D8031B /* XFTopicCell.xib */; };
 		65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */; };
 		65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */; };
+		65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11751C8362C700E994F1 /* XFUserModel.m */; };
+		65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11781C8362D300E994F1 /* XFCommentModel.m */; };
 		65EA75901C74AB4C0017DB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA758F1C74AB4C0017DB20 /* main.m */; };
 		65EA75991C74AB4C0017DB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EA75971C74AB4C0017DB20 /* Main.storyboard */; };
 		65EA759B1C74AB4C0017DB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EA759A1C74AB4C0017DB20 /* Assets.xcassets */; };
@@ -98,6 +100,10 @@
 		65A284701C7B355D00D8031B /* XFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFTopicCell.xib; sourceTree = "<group>"; };
 		65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVoiceView.xib; sourceTree = "<group>"; };
 		65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVideoView.xib; sourceTree = "<group>"; };
+		65AD11741C8362C700E994F1 /* XFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFUserModel.h; sourceTree = "<group>"; };
+		65AD11751C8362C700E994F1 /* XFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFUserModel.m; sourceTree = "<group>"; };
+		65AD11771C8362D300E994F1 /* XFCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentModel.h; sourceTree = "<group>"; };
+		65AD11781C8362D300E994F1 /* XFCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentModel.m; sourceTree = "<group>"; };
 		65EA758B1C74AB4C0017DB20 /* XFBaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFBaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EA758F1C74AB4C0017DB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65EA75981C74AB4C0017DB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -365,6 +371,10 @@
 				65A2846C1C7B33E700D8031B /* XFTopicModel.m */,
 				65752E331C7D8F7C0005CCB2 /* XFTopicFrame.h */,
 				65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */,
+				65AD11741C8362C700E994F1 /* XFUserModel.h */,
+				65AD11751C8362C700E994F1 /* XFUserModel.m */,
+				65AD11771C8362D300E994F1 /* XFCommentModel.h */,
+				65AD11781C8362D300E994F1 /* XFCommentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -694,6 +704,7 @@
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
+				65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
 				65EA764C1C7711AF0017DB20 /* XFMainTableModel.m in Sources */,
 				65EA761A1C74C18A0017DB20 /* XFTabBarViewController.m in Sources */,
@@ -702,6 +713,7 @@
 				65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */,
 				65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */,
 				65EA76231C74C2010017DB20 /* XFTabBar.m in Sources */,
+				65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */,
 				65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */,
 				65EA76431C76FB410017DB20 /* XFCategoryCell.m in Sources */,
 				65EA76391C7615480017DB20 /* HttpTool.m in Sources */,

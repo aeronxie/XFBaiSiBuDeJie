@@ -27,7 +27,8 @@
 @property (nonatomic, assign) NSInteger comment;
 //内容类型
 @property (nonatomic, assign) TopicType type;
-
+/** 最热评论(数组放的是Comment模型) */
+@property (nonatomic, strong) NSArray *top_cmt;
 
 /****** 图片相关 ******/
 /** 小图片*/
@@ -62,7 +63,5 @@
 @property (assign, nonatomic, getter=isBigImage) BOOL bigImage;
 
 
-/** 图片的下载进度 */
-@property (nonatomic, assign) CGFloat pictureProgress;
 
 @end

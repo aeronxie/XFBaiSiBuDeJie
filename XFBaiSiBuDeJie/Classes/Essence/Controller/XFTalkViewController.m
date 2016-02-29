@@ -58,7 +58,7 @@ static NSString *const CellID = @"topic";
     self.page = 0;//清空
     [self.topicsFrame removeAllObjects];
      @weakify(self)
-    [self.tool getTalkDataWithArrayType:TopicTypeTalk block:^(id json, NSString *maxtime) {
+    [self.tool getDataWithArrayType:TopicTypeTalk block:^(id json, NSString *maxtime) {
         @strongify(self)
         for (XFTopicModel *topic in json) {
             XFTopicFrame *topicFrame = [[XFTopicFrame alloc]init];
@@ -77,7 +77,7 @@ static NSString *const CellID = @"topic";
     //计算页码
     NSInteger page = self.page+1;
     @weakify(self)
-    [self.tool getTalkDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeTalk block:^(id json,NSString *maxtime) {
+    [self.tool getDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeTalk block:^(id json,NSString *maxtime) {
         @strongify(self)
         NSMutableArray *newFrames = [NSMutableArray array];
         for (XFTopicModel *topic in json) {

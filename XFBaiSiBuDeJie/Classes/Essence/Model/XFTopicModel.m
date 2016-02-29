@@ -8,6 +8,7 @@
 
 #import "XFTopicModel.h"
 #import "MJExtension.h"
+#import "XFCommentModel.h"
 
 @implementation XFTopicModel
 
@@ -17,6 +18,13 @@
              @"small_image" : @"image0",
              @"large_image" : @"image1",
              @"middle_image" : @"image2"
+             };
+}
+
++ (NSDictionary *)objectClassInArray
+{
+    return @{
+             @"top_cmt" : [XFCommentModel class]
              };
 }
 @end
