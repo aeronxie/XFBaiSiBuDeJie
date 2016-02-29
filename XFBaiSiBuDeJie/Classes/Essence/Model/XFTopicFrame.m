@@ -7,10 +7,12 @@
 //
 
 #import "XFTopicFrame.h"
+#import "XFUserModel.h"
 static CGFloat avatarMaxY = 50;
 static CGFloat inset = 10;
 static CGFloat toolBarHeight = 50;
 static CGFloat textX = 14;
+static CGFloat topCmtH = 20;
 
 @implementation XFTopicFrame
 
@@ -37,6 +39,16 @@ static CGFloat textX = 14;
         self.contentViewFrame = CGRectMake(contentViewX, contentViewY, contentViewW, contentViewH);
         
         maxY = contentViewY + contentViewH + inset;
+        
+    }
+    
+    //如果有热门评论
+    if(topic.top_cmt){
+        
+      NSString *content = [NSString stringWithFormat:@"%@ : %@", topic.top_cmt.user.username, topic.top_cmt.content];
+      CGFloat topcmtContentH = [content boundingRectWithSize:CGSizeMake(textW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+        
+        maxY = topcmtContentH + topCmtH + maxY + inset;
         
     }
     //设置cell的高度

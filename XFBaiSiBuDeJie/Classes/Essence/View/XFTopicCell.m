@@ -11,6 +11,7 @@
 #import "XFContentPictureView.h"
 #import "XFContentVideoView.h"
 #import "XFContentVoiceView.h"
+#import "XFUserModel.h"
 
 @interface XFTopicCell ()
 
@@ -22,6 +23,9 @@
 @property (weak,nonatomic) IBOutlet UIButton *shareBtn;
 @property (weak,nonatomic) IBOutlet UIButton *commenBtn;
 @property (weak,nonatomic) IBOutlet UILabel *text;
+@property (weak,nonatomic) IBOutlet UILabel *topCmtContentText;
+@property (weak,nonatomic) IBOutlet UIView *topCmtView;
+
 @property (strong,nonatomic) XFContentPictureView *pictureView;
 @property (strong,nonatomic) XFContentVideoView *videoView;
 @property (strong,nonatomic) XFContentVoiceView *voiceView;
@@ -44,20 +48,31 @@
         [self.shareBtn setTitle:[NSString stringWithFormat:@"%ld",topic.repost] forState:UIControlStateNormal];
         [self.commenBtn setTitle:[NSString stringWithFormat:@"%ld",topic.comment] forState:UIControlStateNormal];
     
+    // 处理最热评论
+    if (topic.top_cmt) {
+        self.topCmtView.hidden = NO;
+        self.topCmtContentText.text = [NSString stringWithFormat:@"%@ : %@", topic.top_cmt.user.username, topic.top_cmt.content];
+    } else {
+        self.topCmtView.hidden = YES;
+    }
+
     
-    if (topic.type == TopicTypePicture) {
+   if (topic.type == TopicTypePicture) {
         self.pictureView.topic = topic;
         self.pictureView.frame  = topicFrame.contentViewFrame;
+        self.pictureView.hidden = NO;
         self.voiceView.hidden = YES;
         self.videoView.hidden = YES;
     } else if (topic.type == TopicTypeVideo) {
         self.videoView.topic = topic;
         self.videoView.frame  = topicFrame.contentViewFrame;
+        self.videoView.hidden = NO;
         self.pictureView.hidden = YES;
         self.voiceView.hidden = YES;
     } else if (topic.type == TopicTypeVoice) {
         self.voiceView.topic = topic;
         self.voiceView.frame  = topicFrame.contentViewFrame;
+        self.voiceView.hidden = NO;
         self.pictureView.hidden = YES;
         self.videoView.hidden = YES;
     } else {

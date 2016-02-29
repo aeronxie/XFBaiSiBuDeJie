@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XFCommentModel.h"
 
 @interface XFTopicModel : NSObject
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 昵称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像 */
@@ -28,7 +31,7 @@
 //内容类型
 @property (nonatomic, assign) TopicType type;
 /** 最热评论(数组放的是Comment模型) */
-@property (nonatomic, strong) NSArray *top_cmt;
+@property (nonatomic, strong) XFCommentModel *top_cmt;
 
 /****** 图片相关 ******/
 /** 小图片*/
