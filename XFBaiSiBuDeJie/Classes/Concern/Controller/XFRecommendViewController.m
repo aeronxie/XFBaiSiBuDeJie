@@ -40,10 +40,8 @@ static NSString *const mainID = @"main";
     [self setupTableView];
     
     [self setupRefreshView];
-    
-    [self.mainTable.mj_header beginRefreshing];
 
-    
+    //获得侧边数据
     [self.tool getCategoryData:^(id json) {
         self.categoryArray = json;
         [self.categoryTable reloadData];
@@ -69,6 +67,7 @@ static NSString *const mainID = @"main";
 -(void)setupRefreshView {
     
     self.mainTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNew)];
+     [self.mainTable.mj_header beginRefreshing];
     self.mainTable.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
     self.mainTable.mj_footer.hidden = YES;
 

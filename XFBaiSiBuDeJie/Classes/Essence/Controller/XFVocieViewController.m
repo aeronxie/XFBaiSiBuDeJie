@@ -10,6 +10,7 @@
 #import "XFTopicCell.h"
 #import "XFModuleDataTool.h"
 #import "MJRefresh.h"
+#import "XFCommentViewController.h"
 
 
 static NSString *const CellID = @"topic";
@@ -32,8 +33,6 @@ static NSString *const CellID = @"topic";
     [self settableView];
     
     [self setRefresh];
-    
-    [self getNewData];
     
 }
 
@@ -101,6 +100,18 @@ static NSString *const CellID = @"topic";
     [self.tableView registerNib:[UINib nibWithNibName:@"XFTopicCell" bundle:nil] forCellReuseIdentifier:CellID];
 }
 
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    XFTopicFrame *topicFrame = self.topicFrames[indexPath.row];
+    XFTopicModel *topic = topicFrame.topic;
+    XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
+    commentVC.topic = topic;
+    commentVC.topicFrame = topicFrame;
+    
+    [self.navigationController pushViewController:commentVC animated:YES];
+    
+}
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

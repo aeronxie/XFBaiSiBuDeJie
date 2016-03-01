@@ -12,6 +12,7 @@
 #import "XFContentVideoView.h"
 #import "XFContentVoiceView.h"
 #import "XFUserModel.h"
+#import "XFCommentViewController.h"
 
 @interface XFTopicCell ()
 
@@ -32,6 +33,11 @@
 @end
 
 @implementation XFTopicCell
+
++ (instancetype)cell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
 
 
 -(void)setTopicFrame:(XFTopicFrame *)topicFrame {
@@ -107,6 +113,15 @@
     
 }
 
+- (IBAction)commentBtn:(UIButton *)sender {
+    
+    XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
+    commentVC.topic = self.topicFrame.topic;
+    commentVC.topicFrame = self.topicFrame;
+    
+    //[self.navigationController pushViewController:commentVC animated:YES];
+    
+}
 
 #pragma mark - getter and setter
 - (XFContentPictureView *)pictureView

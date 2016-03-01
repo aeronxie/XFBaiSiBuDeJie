@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650742731C8570720069A37A /* XFCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650742711C8570720069A37A /* XFCommentViewController.m */; };
+		650742741C8570720069A37A /* XFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742721C8570720069A37A /* XFCommentViewController.xib */; };
+		650742781C8580BA0069A37A /* XFCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 650742761C8580BA0069A37A /* XFCommentCell.m */; };
+		650742791C8580BA0069A37A /* XFCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742771C8580BA0069A37A /* XFCommentCell.xib */; };
+		6507427C1C85F2360069A37A /* XFCommentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507427B1C85F2360069A37A /* XFCommentFrame.m */; };
 		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
 		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
 		65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */; };
@@ -62,6 +67,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650742701C8570720069A37A /* XFCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentViewController.h; sourceTree = "<group>"; };
+		650742711C8570720069A37A /* XFCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentViewController.m; sourceTree = "<group>"; };
+		650742721C8570720069A37A /* XFCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFCommentViewController.xib; sourceTree = "<group>"; };
+		650742751C8580BA0069A37A /* XFCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentCell.h; sourceTree = "<group>"; };
+		650742761C8580BA0069A37A /* XFCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentCell.m; sourceTree = "<group>"; };
+		650742771C8580BA0069A37A /* XFCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFCommentCell.xib; sourceTree = "<group>"; };
+		6507427A1C85F2360069A37A /* XFCommentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentFrame.h; sourceTree = "<group>"; };
+		6507427B1C85F2360069A37A /* XFCommentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentFrame.m; sourceTree = "<group>"; };
 		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
 		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
 		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
@@ -392,6 +405,9 @@
 				65A284661C799A9400D8031B /* XFAllViewController.m */,
 				65FAABB51C8155A700A3C971 /* XFDetailPictureController.h */,
 				65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */,
+				650742701C8570720069A37A /* XFCommentViewController.h */,
+				650742711C8570720069A37A /* XFCommentViewController.m */,
+				650742721C8570720069A37A /* XFCommentViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +423,8 @@
 				65AD11751C8362C700E994F1 /* XFUserModel.m */,
 				65AD11771C8362D300E994F1 /* XFCommentModel.h */,
 				65AD11781C8362D300E994F1 /* XFCommentModel.m */,
+				6507427A1C85F2360069A37A /* XFCommentFrame.h */,
+				6507427B1C85F2360069A37A /* XFCommentFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,6 +453,9 @@
 				65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */,
 				65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */,
 				65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */,
+				650742751C8580BA0069A37A /* XFCommentCell.h */,
+				650742761C8580BA0069A37A /* XFCommentCell.m */,
+				650742771C8580BA0069A37A /* XFCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -613,9 +634,11 @@
 				65752E321C7C9E3F0005CCB2 /* XFContentPictureView.xib in Resources */,
 				65AD119D1C84D18700E994F1 /* XFMainTableCell.xib in Resources */,
 				65AD11941C84D18600E994F1 /* XFConcernViewController.xib in Resources */,
+				650742791C8580BA0069A37A /* XFCommentCell.xib in Resources */,
 				65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */,
 				65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */,
 				65AD11961C84D18600E994F1 /* XFRecommendViewController.xib in Resources */,
+				650742741C8570720069A37A /* XFCommentViewController.xib in Resources */,
 				65AD11BE1C84D32F00E994F1 /* XFPublishView.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
@@ -686,8 +709,10 @@
 				65AD119A1C84D18700E994F1 /* XFCategoryCell.m in Sources */,
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
+				650742731C8570720069A37A /* XFCommentViewController.m in Sources */,
 				65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
+				650742781C8580BA0069A37A /* XFCommentCell.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
 				65A284611C79958800D8031B /* XFVideoViewController.m in Sources */,
@@ -695,6 +720,7 @@
 				65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */,
 				65AD11951C84D18600E994F1 /* XFRecommendViewController.m in Sources */,
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,
+				6507427C1C85F2360069A37A /* XFCommentFrame.m in Sources */,
 				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,

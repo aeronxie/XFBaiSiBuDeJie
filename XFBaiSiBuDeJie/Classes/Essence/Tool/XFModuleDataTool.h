@@ -25,4 +25,22 @@
  */
 -(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block;
 
+/**
+ *  加载最新的评论（最热和最新评论）
+ *
+ *  @param ID    ID
+ *  @param block 回调
+ */
+-(void)getCommentsWithID:(NSString *)ID block:(void (^)(id json1,id json2))block;
+
+/**
+ *  加载更多最新评论
+ *
+ *  @param ID      ID
+ *  @param page    页码
+ *  @param lastcid 上次id
+ *  @param block   回调
+ */
+-(void)getCommentsWithID:(NSString *)ID page:(NSInteger)page lastcid:(NSString *)lastcid block:(void (^)(id json,NSInteger total))block;
+
 @end

@@ -65,6 +65,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="mainCellCommentClick"/>
+                                <connections>
+                                    <action selector="commentBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ngr-gF-QhT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCe-qq-ac1">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="35"/>

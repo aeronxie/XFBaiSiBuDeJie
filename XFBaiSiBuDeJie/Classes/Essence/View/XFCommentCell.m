@@ -1,0 +1,56 @@
+//
+//  XFCommentCell.m
+//  XFBaiSiBuDeJie
+//
+//  Created by 谢飞 on 16/3/1.
+//  Copyright © 2016年 谢飞. All rights reserved.
+//
+
+#import "XFCommentCell.h"
+#import "UIImageView+WebCache.h"
+#import "XFUserModel.h"
+
+@interface XFCommentCell()
+@property (weak, nonatomic) IBOutlet UIImageView *avartar;
+@property (weak, nonatomic) IBOutlet UIImageView *sex;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *content;
+@property (weak, nonatomic) IBOutlet UILabel *like;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
+
+@end
+
+@implementation XFCommentCell
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+-(void)setComment:(XFCommentModel *)comment {
+    
+    _comment = comment;
+    self.avartar.layer.cornerRadius = 18;
+    self.avartar.clipsToBounds = YES;
+    [self.avartar sd_setImageWithURL:[NSURL URLWithString:comment.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    self.sex.image = [comment.user.sex isEqualToString:@"m"] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
+    if (comment.voiceuri.length) {
+        self.playBtn.hidden = NO;
+        [self.playBtn setTitle:[NSString stringWithFormat:@"%ld''", comment.voicetime] forState:UIControlStateNormal];
+
+    } else {
+        self.playBtn.hidden = YES;
+    }
+    self.content.text = comment.content;
+    self.name.text = comment.user.username;
+    self.like.text = [NSString stringWithFormat:@"%ld", (long)comment.like_count];
+}
+
+
+
+@end

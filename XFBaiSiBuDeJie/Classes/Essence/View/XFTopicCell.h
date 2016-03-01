@@ -12,4 +12,5 @@
 
 @interface XFTopicCell : UITableViewCell
 @property (nonatomic, strong) XFTopicFrame *topicFrame;
++ (instancetype)cell;
 @end
