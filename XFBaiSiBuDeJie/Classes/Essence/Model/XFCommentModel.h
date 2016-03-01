@@ -22,6 +22,8 @@
 @property (nonatomic, assign) NSInteger like_count;
 /** 用户 */
 @property (nonatomic, strong) XFUserModel *user;
+/** 有声音时的行高 */
+@property (nonatomic,assign) CGFloat cellHeight;
 
 @end
 

@@ -42,13 +42,19 @@
     if (comment.voiceuri.length) {
         self.playBtn.hidden = NO;
         [self.playBtn setTitle:[NSString stringWithFormat:@"%ld''", comment.voicetime] forState:UIControlStateNormal];
-
     } else {
+
         self.playBtn.hidden = YES;
     }
     self.content.text = comment.content;
     self.name.text = comment.user.username;
     self.like.text = [NSString stringWithFormat:@"%ld", (long)comment.like_count];
+    
+    CGFloat commentH = [self.content.text boundingRectWithSize:CGSizeMake(204, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+    
+    comment.cellHeight = 50 + commentH;
+    
+    
 }
 
 

@@ -97,11 +97,6 @@
     [super setFrame:frame];
 }
 
-- (void)awakeFromNib {
-    // Initialization code
-
-    
-}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     
@@ -113,13 +108,29 @@
     
 }
 
+//更多按钮
+- (IBAction)moreBtn:(UIButton *)sender {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *save = [UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *report = [UIAlertAction actionWithTitle:@"举报" style:UIAlertActionStyleDefault handler:nil];
+    
+     [alertController addAction:report];
+     [alertController addAction:cancel];
+     [alertController addAction:save];
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    
+}
+
 - (IBAction)commentBtn:(UIButton *)sender {
     
-    XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
-    commentVC.topic = self.topicFrame.topic;
-    commentVC.topicFrame = self.topicFrame;
+    if ([self.delegate respondsToSelector:@selector(commentBtnClick)]) {
+        [self.delegate commentBtnClick];
+    }
     
-    //[self.navigationController pushViewController:commentVC animated:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"commentClick" object:nil];
     
 }
 

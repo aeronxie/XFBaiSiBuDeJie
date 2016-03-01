@@ -67,8 +67,8 @@ static NSString *const cellID = @"comment";
     
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XFCommentCell class]) bundle:nil] forCellReuseIdentifier:cellID];
-    self.tableView.estimatedRowHeight = 44; //估计最低高度
-    self.tableView.rowHeight = UITableViewAutomaticDimension;//自动计算高度
+//    self.tableView.estimatedRowHeight = 44; //估计最低高度
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;//自动计算高度
 }
 
 //设置刷新控件
@@ -161,6 +161,14 @@ static NSString *const cellID = @"comment";
 }
 
 #pragma mark - UITableViewDelegate
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    XFCommentModel *comment = [self commentInIndexPath:indexPath];
+    
+    return comment.cellHeight;
+    
+}
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 

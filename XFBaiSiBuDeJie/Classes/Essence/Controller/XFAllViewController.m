@@ -34,6 +34,16 @@ static NSString *const CellID = @"topic";
     
     [self setRefresh];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterComment) name:@"commentClick" object:nil];
+}
+
+-(void)enterComment {
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"commentClick" object:nil] subscribeNext:^(id x) {
+//       NSIndexPath *path = [NSIndexPath ]
+        [self tableView:self.tableView didSelectRowAtIndexPath:0];
+    }];
+    
     
 }
 
@@ -152,6 +162,5 @@ static NSString *const CellID = @"topic";
     }
     return _topicFrames;
 }
-
 
 @end
