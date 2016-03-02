@@ -67,8 +67,6 @@ static NSString *const cellID = @"comment";
     
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XFCommentCell class]) bundle:nil] forCellReuseIdentifier:cellID];
-//    self.tableView.estimatedRowHeight = 44; //估计最低高度
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;//自动计算高度
 }
 
 //设置刷新控件
@@ -91,7 +89,7 @@ static NSString *const cellID = @"comment";
     self.page = 1;
     [self.lastestComments removeAllObjects];
     [self.hotComments removeAllObjects];
-    [self.tool getCommentsWithID:self.topic.ID block:^(NSMutableArray *hotComments, NSMutableArray *lastestComments) {
+    [self.tool getCommentsWithID:self.topicFrame.topic.ID block:^(NSMutableArray *hotComments, NSMutableArray *lastestComments) {
         self.hotComments = hotComments;
         self.lastestComments = lastestComments;
         [self.tableView reloadData];
@@ -105,7 +103,7 @@ static NSString *const cellID = @"comment";
     
     self.page += 1;
     XFCommentModel *comment = [self.lastestComments lastObject];
-    [self.tool getCommentsWithID:self.topic.ID page:self.page lastcid:comment.ID block:^(id json,NSInteger total) {
+    [self.tool getCommentsWithID:self.topicFrame.topic.ID page:self.page lastcid:comment.ID block:^(id json,NSInteger total) {
         
         NSMutableArray *array = [NSMutableArray array];
         for (XFCommentModel *comment in json) {
@@ -138,8 +136,6 @@ static NSString *const cellID = @"comment";
         }];
     }];
 }
-
-
 /**
  * 返回第section组的所有评论数组
  */

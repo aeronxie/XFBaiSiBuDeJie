@@ -34,17 +34,19 @@ static NSString *const CellID = @"topic";
     
     [self setRefresh];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterComment) name:@"commentClick" object:nil];
+    [self enterComment];
 }
 
+//评论按钮
 -(void)enterComment {
     
-    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"commentClick" object:nil] subscribeNext:^(id x) {
-//       NSIndexPath *path = [NSIndexPath ]
-        [self tableView:self.tableView didSelectRowAtIndexPath:0];
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"commentClick" object:nil] subscribeNext:^(NSNotification *noti) {
+        XFTopicFrame *topicFrame = noti.userInfo[@"topicFrame"];
+        XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
+        commentVC.topicFrame = topicFrame;
+        [self.navigationController pushViewController:commentVC animated:YES];
+
     }];
-    
-    
 }
 
 //设置刷新控件
@@ -103,7 +105,6 @@ static NSString *const CellID = @"topic";
     
 }
 
-
 //设置tableView
 -(void)settableView{
     self.view.backgroundColor = BackgroundColor;
@@ -111,14 +112,16 @@ static NSString *const CellID = @"topic";
     [self.tableView registerNib:[UINib nibWithNibName:@"XFTopicCell" bundle:nil] forCellReuseIdentifier:CellID];
 }
 
+-(void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self forKeyPath:@"topicFrame" ];
+}
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     XFTopicFrame *topicFrame = self.topicFrames[indexPath.row];
-    XFTopicModel *topic = topicFrame.topic;
     XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
-    commentVC.topic = topic;
     commentVC.topicFrame = topicFrame;
     
     [self.navigationController pushViewController:commentVC animated:YES];

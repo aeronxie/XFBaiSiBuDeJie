@@ -11,6 +11,6 @@
 #import "XFTopicFrame.h"
 
 @interface XFCommentViewController : UIViewController
-@property (nonatomic, strong) XFTopicModel *topic;
+//@property (nonatomic, strong) XFTopicModel *topic;
 @property (nonatomic, strong) XFTopicFrame *topicFrame;
 @end

@@ -126,12 +126,9 @@
 
 - (IBAction)commentBtn:(UIButton *)sender {
     
-    if ([self.delegate respondsToSelector:@selector(commentBtnClick)]) {
-        [self.delegate commentBtnClick];
-    }
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:self.topicFrame forKey:@"topicFrame"];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"commentClick" object:nil];
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"commentClick" object:nil userInfo:dic];
 }
 
 #pragma mark - getter and setter

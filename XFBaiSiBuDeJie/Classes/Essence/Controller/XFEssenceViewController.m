@@ -194,9 +194,7 @@
         _naviLeftBtn.size = _naviLeftBtn.currentBackgroundImage.size;
     
         [[_naviLeftBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-#warning no use
-            XFConcernViewController *vc = [[XFConcernViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+
         }];
     }
     return _naviLeftBtn;

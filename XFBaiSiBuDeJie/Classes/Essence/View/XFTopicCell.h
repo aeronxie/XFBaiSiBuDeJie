@@ -9,15 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XFTopicFrame.h"
 
-@protocol XFTopicCellDelegate <NSObject>
-
-@optional
-
--(void)commentBtnClick;
-
-@end
 @interface XFTopicCell : UITableViewCell
 @property (nonatomic, strong) XFTopicFrame *topicFrame;
-@property (nonatomic, weak) id<XFTopicCellDelegate> delegate;
 + (instancetype)cell;
 @end

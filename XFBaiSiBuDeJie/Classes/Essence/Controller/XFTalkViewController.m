@@ -103,9 +103,7 @@ static NSString *const CellID = @"topic";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     XFTopicFrame *topicFrame = self.topicsFrame[indexPath.row];
-    XFTopicModel *topic = topicFrame.topic;
     XFCommentViewController * commentVC = [[XFCommentViewController alloc]init];
-    commentVC.topic = topic;
     commentVC.topicFrame = topicFrame;
 
     [self.navigationController pushViewController:commentVC animated:YES];
