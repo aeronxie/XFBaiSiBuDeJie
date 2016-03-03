@@ -32,6 +32,16 @@
     // Configure the view for the selected state
 }
 
+//使cell一定成为第一响应者
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+//支持的方法
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    return NO;
+}
+
 -(void)setComment:(XFCommentModel *)comment {
     
     _comment = comment;

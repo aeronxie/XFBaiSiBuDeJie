@@ -11,13 +11,17 @@
 #import "MJExtension.h"
 #import "XFTopicModel.h"
 #import "XFCommentModel.h"
+#import "XFLatestViewController.h"
 
 
 @implementation XFModuleDataTool
--(void)getDataWithArrayType:(TopicType)type block:(void (^)(id json,id param))block {
+
+
+
+-(void)getDataWithArrayType:(TopicType)type parameterA:(NSString *)parameterA block:(void (^)(id json,id param))block {
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = parameterA;
     params[@"c"] = @"data";
     params[@"type"] = @(type);
 
@@ -32,11 +36,11 @@
     }];
 }
 
--(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block {
+-(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type parameterA:(NSString *)parameterA block:(void (^)(id json,id param))block {
     
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = parameterA;
     params[@"c"] = @"data";
     params[@"type"] = @(type);
     params[@"page"] = page;
@@ -63,6 +67,11 @@
     params[@"data_id"] = ID;
     params[@"hot"] = @"1";
     [HttpTool get:BaseURL parameters:params success:^(id json) {
+       
+        // 如果没有数据
+        if (![json isKindOfClass:[NSDictionary class]]) {
+            return;
+        }
         //最热评论
         NSArray *hotCommentArray = [XFCommentModel mj_objectArrayWithKeyValuesArray:json[@"hot"]];
         
@@ -76,7 +85,7 @@
 }
 
 
--(void)getCommentsWithID:(NSString *)ID page:(NSInteger)page lastcid:(NSString *)lastcid block:(void (^)(id,NSInteger))block{
+-(void)getCommentsWithID:(NSString *)ID page:(NSInteger)page lastcid:(NSString *)lastcid block:(void (^)(id, NSInteger))block{
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"dataList";
@@ -86,11 +95,17 @@
     params[@"lastcid"] = lastcid;
     
     [HttpTool get:BaseURL parameters:params success:^(id json) {
+        
+        // 如果没有数据没有数据
+        if (![json isKindOfClass:[NSDictionary class]]) {
+            return;
+        }
         //最热评论
         NSArray *moreCommentArray = [XFCommentModel mj_objectArrayWithKeyValuesArray:json[@"data"]];
         
         NSInteger total = [json[@"total"] integerValue];
-            block(moreCommentArray,total);
+        
+        block(moreCommentArray,total);
         
     } failure:^(NSError *error) {
         nil;

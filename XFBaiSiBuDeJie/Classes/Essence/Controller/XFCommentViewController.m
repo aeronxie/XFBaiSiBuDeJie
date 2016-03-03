@@ -41,7 +41,7 @@ static NSString *const cellID = @"comment";
 }
 
 
-//设置头
+//设置头部的cell
 -(void)setupHeader {
     
     UIView *header = [[UIView alloc]init];
@@ -87,14 +87,13 @@ static NSString *const cellID = @"comment";
 -(void)getNewData {
     
     self.page = 1;
-    [self.lastestComments removeAllObjects];
-    [self.hotComments removeAllObjects];
     [self.tool getCommentsWithID:self.topicFrame.topic.ID block:^(NSMutableArray *hotComments, NSMutableArray *lastestComments) {
         self.hotComments = hotComments;
         self.lastestComments = lastestComments;
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
     }];
+    [self.tableView.mj_header endRefreshing];
     
 }
 
@@ -119,8 +118,7 @@ static NSString *const cellID = @"comment";
             [self.tableView.mj_footer endRefreshing];
         }
     }];
-    
-    
+
 }
 
 //监听键盘的改变
@@ -166,8 +164,34 @@ static NSString *const cellID = @"comment";
     
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //创建menu菜单
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    if (menu.isMenuVisible) {
+        [menu setMenuVisible:NO animated:YES];
+    }else {
+        //取出点的那一行
+        XFCommentCell *cell = (XFCommentCell *)[tableView cellForRowAtIndexPath:indexPath];
+        //成为第一响应者
+        [cell becomeFirstResponder];
+        
+        UIMenuItem *ding = [[UIMenuItem alloc]initWithTitle:@"顶" action:@selector(ding:)];
+        UIMenuItem *replay = [[UIMenuItem alloc]initWithTitle:@"回复" action:@selector(replay:)];
+        UIMenuItem *report = [[UIMenuItem alloc]initWithTitle:@"举报" action:@selector(report:)];
+        UIMenuItem *copy = [[UIMenuItem alloc]initWithTitle:@"复制" action:@selector(copyText:)];
+        menu.menuItems = @[ding,replay,report,copy];
+        
+        CGRect cellRect = CGRectMake(0, cell.height / 2, cell.width, cell.height / 2);
+        [menu setTargetRect:cellRect inView:cell];
+        [menu setMenuVisible:YES animated:YES];
+    }
+    
+}
+
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 
+    [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
     //让键盘退出
     [self.view endEditing:YES];
 }
@@ -212,6 +236,27 @@ static NSString *const cellID = @"comment";
     return cell;
 }
 
+#pragma mark - MenuItem处理
+- (void)ding:(UIMenuController *)menu {//顶
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, indexPath);
+}
+
+- (void)replay:(UIMenuController *)menu {//回复
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, indexPath);
+}
+
+- (void)report:(UIMenuController *)menu {//举报
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, indexPath);
+}
+
+- (void)copyText:(UIMenuController *)menu {//复制
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    UIPasteboard *paste = [UIPasteboard generalPasteboard];
+    paste.string = [self commentInIndexPath:indexPath].content;
+}
 
 #pragma mark - getter and setter 
 

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XFEssenceViewController.h"
 
-@interface XFLatestViewController : UIViewController
+@interface XFLatestViewController : XFEssenceViewController
 
 @end

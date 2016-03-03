@@ -11,6 +11,7 @@
 #import "XFModuleDataTool.h"
 #import "MJRefresh.h"
 #import "XFCommentViewController.h"
+#import "XFLatestViewController.h"
 
 
 static NSString *const CellID = @"topic";
@@ -63,12 +64,18 @@ static NSString *const CellID = @"topic";
     
 }
 
+#pragma mark - a参数
+- (NSString *)parameterA
+{
+    return [self.parentViewController isKindOfClass:[XFLatestViewController class]] ? @"newlist" : @"list";
+}
+
 //获取最新数据
 -(void)getNewData {
     self.page = 0;//清空
     [self.topicFrames removeAllObjects];
     @weakify(self)
-    [self.tool getDataWithArrayType:TopicTypeAll block:^(id json, NSString *maxtime) {
+    [self.tool getDataWithArrayType:TopicTypeAll parameterA:self.parameterA block:^(id json, NSString *maxtime) {
         @strongify(self)
         for (XFTopicModel *topic in json) {
             XFTopicFrame *topicFrame = [[XFTopicFrame alloc]init];
@@ -87,7 +94,7 @@ static NSString *const CellID = @"topic";
     //计算页码
     NSInteger page = self.page+1;
     @weakify(self)
-    [self.tool getDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeAll block:^(id json,NSString *maxtime) {
+    [self.tool getDataWithMaxtime:self.maxtime page:@(page) TopicType:TopicTypeAll parameterA:self.parameterA block:^(id json,NSString *maxtime) {
         @strongify(self)
         NSMutableArray *newArray = [NSMutableArray array];
         for (XFTopicModel *topic in json) {
@@ -135,7 +142,6 @@ static NSString *const CellID = @"topic";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     
     XFTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     cell.topicFrame = self.topicFrames[indexPath.row];

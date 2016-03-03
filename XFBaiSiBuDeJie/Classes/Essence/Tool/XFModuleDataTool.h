@@ -15,7 +15,7 @@
  *
  *  @param block 回调
  */
--(void)getDataWithArrayType:(TopicType)type block:(void (^)(id json,id param))block;
+-(void)getDataWithArrayType:(TopicType)type parameterA:(NSString *)parameterA block:(void (^)(id json,id param))block;
 /**
  *  加载更多数据（需要传页码）
  *
@@ -23,7 +23,7 @@
  *  @param page    页码
  *  @param block   回调
  */
--(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type block:(void (^)(id json,id param))block;
+-(void)getDataWithMaxtime:(NSString *)maxtime page:(NSNumber *)page TopicType:(TopicType)type parameterA:(NSString *)parameterA block:(void (^)(id json,id param))block;
 
 /**
  *  加载最新的评论（最热和最新评论）
