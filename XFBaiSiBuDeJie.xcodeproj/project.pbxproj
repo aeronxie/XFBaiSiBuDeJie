@@ -18,6 +18,7 @@
 		65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E341C7D8F7C0005CCB2 /* XFTopicFrame.m */; };
 		65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */; };
 		65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */; };
+		657E659C1C89DBD2005D6D8E /* XFWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E659B1C89DBD2005D6D8E /* XFWebviewController.m */; };
 		65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845A1C79956800D8031B /* XFVocieViewController.m */; };
 		65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2845D1C79957D00D8031B /* XFPictrueViewController.m */; };
 		65A284611C79958800D8031B /* XFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A284601C79958800D8031B /* XFVideoViewController.m */; };
@@ -62,6 +63,14 @@
 		65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA761D1C74C1A70017DB20 /* AppDelegate.m */; };
 		65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EA76291C74C54E0017DB20 /* UIView+Extension.m */; };
 		65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */; };
+		65FE4B3A1C8884B900A4BA45 /* UIImageView+Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B391C8884B900A4BA45 /* UIImageView+Header.m */; };
+		65FE4B3D1C88850600A4BA45 /* UIImage+XFCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B3C1C88850600A4BA45 /* UIImage+XFCircle.m */; };
+		65FE4B401C888BBA00A4BA45 /* XFMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B3F1C888BBA00A4BA45 /* XFMeCell.m */; };
+		65FE4B461C896C4500A4BA45 /* XFSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B451C896C4500A4BA45 /* XFSquareCell.m */; };
+		65FE4B491C896D1400A4BA45 /* XFSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B481C896D1400A4BA45 /* XFSquare.m */; };
+		65FE4B4C1C896D4700A4BA45 /* XFSquareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B4B1C896D4700A4BA45 /* XFSquareTool.m */; };
+		65FE4B4F1C897F1900A4BA45 /* XFSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B4E1C897F1900A4BA45 /* XFSquareButton.m */; };
+		65FE4B911C89D2FF00A4BA45 /* XFSquareFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE4B901C89D2FF00A4BA45 /* XFSquareFooterView.m */; };
 		9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97E68F796933B40822AB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +93,8 @@
 		65752E371C7D9DBC0005CCB2 /* XFContentVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVoiceView.m; sourceTree = "<group>"; };
 		65752E391C7D9DCD0005CCB2 /* XFContentVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFContentVideoView.h; sourceTree = "<group>"; };
 		65752E3A1C7D9DCD0005CCB2 /* XFContentVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFContentVideoView.m; sourceTree = "<group>"; };
+		657E659A1C89DBD2005D6D8E /* XFWebviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWebviewController.h; sourceTree = "<group>"; };
+		657E659B1C89DBD2005D6D8E /* XFWebviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWebviewController.m; sourceTree = "<group>"; };
 		65A284591C79956800D8031B /* XFVocieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFVocieViewController.h; sourceTree = "<group>"; };
 		65A2845A1C79956800D8031B /* XFVocieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVocieViewController.m; sourceTree = "<group>"; };
 		65A2845C1C79957D00D8031B /* XFPictrueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFPictrueViewController.h; sourceTree = "<group>"; };
@@ -162,6 +173,22 @@
 		65EA762B1C74C5840017DB20 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		65FAABB51C8155A700A3C971 /* XFDetailPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDetailPictureController.h; sourceTree = "<group>"; };
 		65FAABB61C8155A700A3C971 /* XFDetailPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDetailPictureController.m; sourceTree = "<group>"; };
+		65FE4B381C8884B900A4BA45 /* UIImageView+Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Header.h"; sourceTree = "<group>"; };
+		65FE4B391C8884B900A4BA45 /* UIImageView+Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Header.m"; sourceTree = "<group>"; };
+		65FE4B3B1C88850600A4BA45 /* UIImage+XFCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XFCircle.h"; sourceTree = "<group>"; };
+		65FE4B3C1C88850600A4BA45 /* UIImage+XFCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XFCircle.m"; sourceTree = "<group>"; };
+		65FE4B3E1C888BBA00A4BA45 /* XFMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFMeCell.h; path = XFBaiSiBuDeJie/Classes/Category/XFMeCell.h; sourceTree = SOURCE_ROOT; };
+		65FE4B3F1C888BBA00A4BA45 /* XFMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFMeCell.m; path = XFBaiSiBuDeJie/Classes/Category/XFMeCell.m; sourceTree = SOURCE_ROOT; };
+		65FE4B441C896C4500A4BA45 /* XFSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFSquareCell.h; path = XFBaiSiBuDeJie/Classes/Category/XFSquareCell.h; sourceTree = SOURCE_ROOT; };
+		65FE4B451C896C4500A4BA45 /* XFSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFSquareCell.m; path = XFBaiSiBuDeJie/Classes/Category/XFSquareCell.m; sourceTree = SOURCE_ROOT; };
+		65FE4B471C896D1400A4BA45 /* XFSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFSquare.h; path = XFBaiSiBuDeJie/Classes/Category/XFSquare.h; sourceTree = SOURCE_ROOT; };
+		65FE4B481C896D1400A4BA45 /* XFSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFSquare.m; path = XFBaiSiBuDeJie/Classes/Category/XFSquare.m; sourceTree = SOURCE_ROOT; };
+		65FE4B4A1C896D4700A4BA45 /* XFSquareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFSquareTool.h; path = XFBaiSiBuDeJie/Classes/Category/XFSquareTool.h; sourceTree = SOURCE_ROOT; };
+		65FE4B4B1C896D4700A4BA45 /* XFSquareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFSquareTool.m; path = XFBaiSiBuDeJie/Classes/Category/XFSquareTool.m; sourceTree = SOURCE_ROOT; };
+		65FE4B4D1C897F1900A4BA45 /* XFSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFSquareButton.h; path = XFBaiSiBuDeJie/Classes/Category/XFSquareButton.h; sourceTree = SOURCE_ROOT; };
+		65FE4B4E1C897F1900A4BA45 /* XFSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFSquareButton.m; path = XFBaiSiBuDeJie/Classes/Category/XFSquareButton.m; sourceTree = SOURCE_ROOT; };
+		65FE4B8F1C89D2FF00A4BA45 /* XFSquareFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSquareFooterView.h; sourceTree = "<group>"; };
+		65FE4B901C89D2FF00A4BA45 /* XFSquareFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSquareFooterView.m; sourceTree = "<group>"; };
 		93C111E3628DDD5B6A1F02D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E95CFFAFAF3A502F07AE5DD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF97E68F796933B40822AB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +386,10 @@
 			children = (
 				65EA76281C74C54E0017DB20 /* UIView+Extension.h */,
 				65EA76291C74C54E0017DB20 /* UIView+Extension.m */,
+				65FE4B3B1C88850600A4BA45 /* UIImage+XFCircle.h */,
+				65FE4B3C1C88850600A4BA45 /* UIImage+XFCircle.m */,
+				65FE4B381C8884B900A4BA45 /* UIImageView+Header.h */,
+				65FE4B391C8884B900A4BA45 /* UIImageView+Header.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -521,6 +552,8 @@
 			children = (
 				65EA76111C74C18A0017DB20 /* XFMeViewController.h */,
 				65EA76121C74C18A0017DB20 /* XFMeViewController.m */,
+				657E659A1C89DBD2005D6D8E /* XFWebviewController.h */,
+				657E659B1C89DBD2005D6D8E /* XFWebviewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -528,6 +561,8 @@
 		65EA76131C74C18A0017DB20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65FE4B471C896D1400A4BA45 /* XFSquare.h */,
+				65FE4B481C896D1400A4BA45 /* XFSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -535,6 +570,8 @@
 		65EA76141C74C18A0017DB20 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				65FE4B4A1C896D4700A4BA45 /* XFSquareTool.h */,
+				65FE4B4B1C896D4700A4BA45 /* XFSquareTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -542,6 +579,14 @@
 		65EA76151C74C18A0017DB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65FE4B3E1C888BBA00A4BA45 /* XFMeCell.h */,
+				65FE4B3F1C888BBA00A4BA45 /* XFMeCell.m */,
+				65FE4B441C896C4500A4BA45 /* XFSquareCell.h */,
+				65FE4B451C896C4500A4BA45 /* XFSquareCell.m */,
+				65FE4B4D1C897F1900A4BA45 /* XFSquareButton.h */,
+				65FE4B4E1C897F1900A4BA45 /* XFSquareButton.m */,
+				65FE4B8F1C89D2FF00A4BA45 /* XFSquareFooterView.h */,
+				65FE4B901C89D2FF00A4BA45 /* XFSquareFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -703,18 +748,21 @@
 				65EA762A1C74C54E0017DB20 /* UIView+Extension.m in Sources */,
 				65AD119A1C84D18700E994F1 /* XFCategoryCell.m in Sources */,
 				65EA75901C74AB4C0017DB20 /* main.m in Sources */,
+				65FE4B401C888BBA00A4BA45 /* XFMeCell.m in Sources */,
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
 				650742731C8570720069A37A /* XFCommentViewController.m in Sources */,
 				65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
 				650742781C8580BA0069A37A /* XFCommentCell.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
+				65FE4B911C89D2FF00A4BA45 /* XFSquareFooterView.m in Sources */,
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
 				65A284611C79958800D8031B /* XFVideoViewController.m in Sources */,
 				65AD11BF1C84D32F00E994F1 /* XFTabBar.m in Sources */,
 				65FAABB71C8155A700A3C971 /* XFDetailPictureController.m in Sources */,
 				65AD11951C84D18600E994F1 /* XFRecommendViewController.m in Sources */,
 				65A284671C799A9400D8031B /* XFAllViewController.m in Sources */,
+				65FE4B491C896D1400A4BA45 /* XFSquare.m in Sources */,
 				65752E3B1C7D9DCD0005CCB2 /* XFContentVideoView.m in Sources */,
 				65A2845E1C79957D00D8031B /* XFPictrueViewController.m in Sources */,
 				65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */,
@@ -722,19 +770,25 @@
 				65AD11AB1C84D26C00E994F1 /* XFShowWordBtn.m in Sources */,
 				65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
+				65FE4B461C896C4500A4BA45 /* XFSquareCell.m in Sources */,
 				65AD11BB1C84D32F00E994F1 /* XFNavigationController.m in Sources */,
 				65AD11AF1C84D2B300E994F1 /* HttpTool.m in Sources */,
+				65FE4B4C1C896D4700A4BA45 /* XFSquareTool.m in Sources */,
 				65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */,
 				65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */,
+				65FE4B4F1C897F1900A4BA45 /* XFSquareButton.m in Sources */,
 				65AD11A01C84D1CB00E994F1 /* XFConcernViewController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
+				65FE4B3D1C88850600A4BA45 /* UIImage+XFCircle.m in Sources */,
 				65AD11BC1C84D32F00E994F1 /* XFTabBarViewController.m in Sources */,
 				65752E351C7D8F7C0005CCB2 /* XFTopicFrame.m in Sources */,
+				65FE4B3A1C8884B900A4BA45 /* UIImageView+Header.m in Sources */,
 				65AD11A41C84D1F500E994F1 /* XFLoginViewController.m in Sources */,
 				65AD11991C84D18700E994F1 /* XFRcommandDataTool.m in Sources */,
 				65752E381C7D9DBC0005CCB2 /* XFContentVoiceView.m in Sources */,
 				65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */,
 				65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */,
+				657E659C1C89DBD2005D6D8E /* XFWebviewController.m in Sources */,
 				65AD11981C84D18600E994F1 /* XFMainTableModel.m in Sources */,
 				65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */,
 				65AD11971C84D18600E994F1 /* XFCategoryModel.m in Sources */,

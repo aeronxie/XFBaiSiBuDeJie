@@ -79,7 +79,6 @@ static NSString *const cellID = @"comment";
     [self.tableView.mj_header beginRefreshing];
     
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(getMoreData)];
-    
 }
 
 
@@ -91,8 +90,9 @@ static NSString *const cellID = @"comment";
         self.hotComments = hotComments;
         self.lastestComments = lastestComments;
         [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_header endRefreshing];     
     }];
+
     [self.tableView.mj_header endRefreshing];
     
 }

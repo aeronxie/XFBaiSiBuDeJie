@@ -8,3 +8,4 @@ use_frameworks!
 pod 'ReactiveCocoa', '~> 4.0.4-alpha-4’
 pod 'MJRefresh', '~> 3.1.0'
 pod 'DACircularProgress', '~> 2.3.1'
+pod 'NJKWebViewProgress', '~> 0.2.3'

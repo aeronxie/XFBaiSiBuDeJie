@@ -17,6 +17,11 @@ PODS:
   - DACircularProgress (2.3.1)
   - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - ReactiveCocoa (4.0.4-alpha-4):
     - ReactiveCocoa/UI (= 4.0.4-alpha-4)
     - Result (~> 1.0)
@@ -40,6 +45,7 @@ DEPENDENCIES:
   - DACircularProgress (~> 2.3.1)
   - MJExtension (~> 3.0.7)
   - MJRefresh (~> 3.1.0)
+  - NJKWebViewProgress (~> 0.2.3)
   - ReactiveCocoa (~> 4.0.4-alpha-4)
   - SDWebImage (~> 3.7.3)
   - SVProgressHUD (~> 2.0-beta8)
@@ -50,6 +56,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461

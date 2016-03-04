@@ -22,6 +22,8 @@
 
 #import "ReactiveCocoa.h"
 #import "UIView+Extension.h"
+#import "UIImage+XFCircle.h"
+#import "UIImageView+Header.h"
 
 typedef NS_ENUM(NSUInteger, TopicType) {
     TopicTypeAll = 1, // 全部

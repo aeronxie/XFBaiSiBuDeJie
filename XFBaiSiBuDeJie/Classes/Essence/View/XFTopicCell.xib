@@ -20,11 +20,6 @@
                             <constraint firstAttribute="width" constant="42" id="hpb-iw-YeN"/>
                             <constraint firstAttribute="height" constant="42" id="ovp-Gt-7Pr"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="21"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz8-XR-4Hj">
                         <rect key="frame" x="66" y="8" width="189" height="21"/>

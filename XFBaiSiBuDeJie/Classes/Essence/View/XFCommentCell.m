@@ -45,9 +45,8 @@
 -(void)setComment:(XFCommentModel *)comment {
     
     _comment = comment;
-    self.avartar.layer.cornerRadius = 18;
-    self.avartar.clipsToBounds = YES;
-    [self.avartar sd_setImageWithURL:[NSURL URLWithString:comment.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+
+    [self.avartar setHeader:comment.user.profile_image];
     self.sex.image = [comment.user.sex isEqualToString:@"m"] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
     if (comment.voiceuri.length) {
         self.playBtn.hidden = NO;

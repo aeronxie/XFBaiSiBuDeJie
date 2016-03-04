@@ -44,7 +44,8 @@
     
     _topicFrame = topicFrame;
     XFTopicModel *topic = topicFrame.topic;
-    [self.avatar sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    
+    [self.avatar setHeader:topic.profile_image];
         self.name.text = topic.name;
         self.creat_time.text = topic.created_at;
         self.text.text = topic.text;
