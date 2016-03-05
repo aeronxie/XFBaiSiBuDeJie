@@ -59,8 +59,6 @@ static NSString *const squareCellID = @"square";
         self.tableView.tableFooterView = self.tableView.tableFooterView;
     }];
 
-  
-    
 }
 
 //设置导航按钮
