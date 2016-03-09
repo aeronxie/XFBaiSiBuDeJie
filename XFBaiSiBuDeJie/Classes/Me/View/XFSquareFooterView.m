@@ -30,7 +30,7 @@
     CGFloat btnW = SCREEN_WIDTH / 4;
     CGFloat btnH = btnW;
     XFSquareTool *tool = [[XFSquareTool alloc]init];
-   
+    NSLog(@"1");
     [tool getSquareData:^(NSArray *squareItems) {
         
         for (NSInteger i = 0; i < squareItems.count; i++) {
@@ -53,9 +53,9 @@
                 [nav pushViewController:web animated:YES];
             }];
         }
-    //算出footer的高度
-    self.height = (squareItems.count + maxCols - 1)/maxCols *  btnH;
-    [self setNeedsDisplay];
+        //算出footer的高度
+        self.height = (squareItems.count + maxCols - 1)/maxCols *  btnH;
+        [self setNeedsDisplay];
     }];
 }
 

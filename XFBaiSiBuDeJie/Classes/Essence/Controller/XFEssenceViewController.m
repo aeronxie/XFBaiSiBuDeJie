@@ -20,7 +20,7 @@
 @property (nonatomic,strong) UIButton *naviLeftBtn;
 @property (nonatomic,strong) UIView *titleView;
 @property (nonatomic,strong) UIView *btnIndicator;
-@property (nonatomic,weak) UIButton *seletedBtn;
+@property (nonatomic,  weak) UIButton *seletedBtn;
 @property (nonatomic,strong) UIScrollView *scrollview;
 @end
 

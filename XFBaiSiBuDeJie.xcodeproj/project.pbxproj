@@ -28,6 +28,10 @@
 		65A2846D1C7B33E700D8031B /* XFTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846C1C7B33E700D8031B /* XFTopicModel.m */; };
 		65A284711C7B355D00D8031B /* XFTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2846F1C7B355D00D8031B /* XFTopicCell.m */; };
 		65A284721C7B355D00D8031B /* XFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A284701C7B355D00D8031B /* XFTopicCell.xib */; };
+		65A2AB4E1C8F01B500BF2B8F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2AB4A1C8EE2FA00BF2B8F /* AVFoundation.framework */; };
+		65A2AB4F1C8F01BE00BF2B8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2AB481C8EC99F00BF2B8F /* MediaPlayer.framework */; };
+		65A2AB5E1C8FF15700BF2B8F /* KRVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */; };
+		65A2AB5F1C8FF15700BF2B8F /* KRVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2AB5D1C8FF15700BF2B8F /* KRVideoPlayerControlView.m */; };
 		65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */; };
 		65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */; };
 		65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11751C8362C700E994F1 /* XFUserModel.m */; };
@@ -112,6 +116,13 @@
 		65A2846E1C7B355D00D8031B /* XFTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTopicCell.h; sourceTree = "<group>"; };
 		65A2846F1C7B355D00D8031B /* XFTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTopicCell.m; sourceTree = "<group>"; };
 		65A284701C7B355D00D8031B /* XFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFTopicCell.xib; sourceTree = "<group>"; };
+		65A2AB481C8EC99F00BF2B8F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		65A2AB4A1C8EE2FA00BF2B8F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		65A2AB4C1C8EE31A00BF2B8F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		65A2AB5A1C8FF15700BF2B8F /* KRVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerController.h; sourceTree = "<group>"; };
+		65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerController.m; sourceTree = "<group>"; };
+		65A2AB5C1C8FF15700BF2B8F /* KRVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerControlView.h; sourceTree = "<group>"; };
+		65A2AB5D1C8FF15700BF2B8F /* KRVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerControlView.m; sourceTree = "<group>"; };
 		65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVoiceView.xib; sourceTree = "<group>"; };
 		65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVideoView.xib; sourceTree = "<group>"; };
 		65AD11741C8362C700E994F1 /* XFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFUserModel.h; sourceTree = "<group>"; };
@@ -199,6 +210,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2AB4F1C8F01BE00BF2B8F /* MediaPlayer.framework in Frameworks */,
+				65A2AB4E1C8F01B500BF2B8F /* AVFoundation.framework in Frameworks */,
 				9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +245,17 @@
 				652CB2721C78E1C00027B71B /* XFGuideView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		65A2AB591C8FF15700BF2B8F /* KRVideoPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				65A2AB5A1C8FF15700BF2B8F /* KRVideoPlayerController.h */,
+				65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */,
+				65A2AB5C1C8FF15700BF2B8F /* KRVideoPlayerControlView.h */,
+				65A2AB5D1C8FF15700BF2B8F /* KRVideoPlayerControlView.m */,
+			);
+			path = KRVideoPlayerController;
 			sourceTree = "<group>";
 		};
 		65AD11801C84D18600E994F1 /* Controller */ = {
@@ -288,6 +312,7 @@
 		65AD11AC1C84D2B300E994F1 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				65A2AB591C8FF15700BF2B8F /* KRVideoPlayerController */,
 				65AD11AD1C84D2B300E994F1 /* HttpTool.h */,
 				65AD11AE1C84D2B300E994F1 /* HttpTool.m */,
 			);
@@ -604,6 +629,9 @@
 		A665137DCAB793132FF0FD7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65A2AB4C1C8EE31A00BF2B8F /* CoreMedia.framework */,
+				65A2AB4A1C8EE2FA00BF2B8F /* AVFoundation.framework */,
+				65A2AB481C8EC99F00BF2B8F /* MediaPlayer.framework */,
 				FF97E68F796933B40822AB81 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -778,6 +806,7 @@
 				65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */,
 				65FE4B4F1C897F1900A4BA45 /* XFSquareButton.m in Sources */,
 				65AD11A01C84D1CB00E994F1 /* XFConcernViewController.m in Sources */,
+				65A2AB5E1C8FF15700BF2B8F /* KRVideoPlayerController.m in Sources */,
 				65EA761E1C74C1A70017DB20 /* AppDelegate.m in Sources */,
 				65FE4B3D1C88850600A4BA45 /* UIImage+XFCircle.m in Sources */,
 				65AD11BC1C84D32F00E994F1 /* XFTabBarViewController.m in Sources */,
@@ -792,6 +821,7 @@
 				65AD11981C84D18600E994F1 /* XFMainTableModel.m in Sources */,
 				65A2845B1C79956800D8031B /* XFVocieViewController.m in Sources */,
 				65AD11971C84D18600E994F1 /* XFCategoryModel.m in Sources */,
+				65A2AB5F1C8FF15700BF2B8F /* KRVideoPlayerControlView.m in Sources */,
 				65AD119C1C84D18700E994F1 /* XFMainTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

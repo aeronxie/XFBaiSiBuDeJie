@@ -34,6 +34,13 @@
 
 @implementation XFTopicCell
 
+// 从队列里面复用时调用
+- (void)prepareForReuse {
+    
+    [super prepareForReuse];
+    [_videoView reset];
+}
+
 + (instancetype)cell
 {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
@@ -125,6 +132,7 @@
     
 }
 
+//评论按钮
 - (IBAction)commentBtn:(UIButton *)sender {
     
     NSDictionary *dic = [NSDictionary dictionaryWithObject:self.topicFrame forKey:@"topicFrame"];

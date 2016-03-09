@@ -43,7 +43,9 @@
     CGFloat btnW = (SCREEN_WIDTH - 3) / 4;
     CGFloat btnH = btnW;
     XFSquareTool *tool = [[XFSquareTool alloc]init];
+    NSLog(@"1");
     [tool getSquareData:^(NSArray *squareItems) {
+       
         for (NSInteger i = 0; i < squareItems.count; i++) {
             XFSquareButton *button = [[XFSquareButton alloc]init];
             button.square = squareItems[i];
@@ -57,7 +59,9 @@
         //算出cell的高度
         self.height = (squareItems.count + maxCols - 1)/maxCols *  btnH;
         [self setNeedsDisplay];
+         NSLog(@"2");
     }];
+    NSLog(@"3");
     
 }
 

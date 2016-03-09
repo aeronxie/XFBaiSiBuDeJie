@@ -12,6 +12,9 @@
 #import "MJRefresh.h"
 #import "XFCommentViewController.h"
 #import "XFLatestViewController.h"
+#import "XFContentVideoView.h"
+#import <AVFoundation/AVFoundation.h>
+#import "KRVideoPlayerController.h"
 
 
 
@@ -20,6 +23,7 @@ static NSString *const CellID = @"topic";
 @interface XFVideoViewController()
 @property (nonatomic,strong) XFModuleDataTool *tool;
 @property (nonatomic,strong) NSMutableArray *topicFrames;
+@property (nonatomic, strong) KRVideoPlayerController *videoController;
 /** 当前页码 */
 @property (nonatomic, assign) NSInteger page;
 /** 当加载下一页数据时需要的参数 */
@@ -36,8 +40,25 @@ static NSString *const CellID = @"topic";
     
     [self setRefresh];
     
+    [self setupPlayBtnNotification];
+    
+    
+    
     
 }
+
+//添加播放按钮通知
+-(void)setupPlayBtnNotification {
+
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"playVideo" object:nil] subscribeNext:^(NSNotification *noti) {
+        XFTopicModel *topic = noti.userInfo[@"Video"];
+        [self playVideoWithURL:[NSURL URLWithString:topic.videouri]];
+    }];
+
+}
+
+
+
 
 //设置刷新控件
 -(void)setRefresh {
@@ -126,7 +147,6 @@ static NSString *const CellID = @"topic";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
     XFTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     cell.topicFrame = self.topicFrames[indexPath.row];
     
@@ -156,6 +176,17 @@ static NSString *const CellID = @"topic";
     return _topicFrames;
 }
 
-
+- (void)playVideoWithURL:(NSURL *)url {
+    if (!self.videoController) {
+        
+        self.videoController = [[KRVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*(9.0/16.0))];
+        __weak typeof(self)weakSelf = self;
+        [self.videoController setDimissCompleteBlock:^{
+            weakSelf.videoController = nil;
+        }];
+        [self.videoController showInWindow];
+    }
+    self.videoController.contentURL = url;
+}
 
 @end

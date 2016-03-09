@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 @class XFTopicModel;
+
 @interface XFContentVideoView : UIView
 @property (nonatomic, strong) XFTopicModel *topic;
 +(instancetype)videoView;
+- (void)reset;
 @end
