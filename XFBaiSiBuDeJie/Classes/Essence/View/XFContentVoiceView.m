@@ -9,6 +9,9 @@
 #import "XFContentVoiceView.h"
 #import "XFDetailPictureController.h"
 #import "UIImageView+WebCache.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "XFVociePlayerController.h"
 
 
 @interface XFContentVoiceView ()
@@ -16,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *playTime;
 @property (weak, nonatomic) IBOutlet UIButton *playBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic,strong) XFVociePlayerController *voicePlayer;
 @end
 @implementation XFContentVoiceView
 
@@ -26,6 +30,7 @@
     // 给图片添加监听器
     self.imageView.userInteractionEnabled = YES;
     [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)]];
+    
 }
 
 +(instancetype)voiceView {
@@ -50,4 +55,24 @@
     
 }
 
+//播放按钮
+- (IBAction)playBtn:(UIButton *)sender {
+
+    self.playBtn.hidden = YES;
+    self.voicePlayer = [[XFVociePlayerController alloc]initWithNibName:@"XFVociePlayerController" bundle:nil];
+    self.voicePlayer.url = self.topic.voiceuri;
+    self.voicePlayer.totalTime = self.topic.voicetime;
+    self.voicePlayer.view.width = self.imageView.width;
+    self.voicePlayer.view.y = self.imageView.height - self.voicePlayer.view.height;
+    [self addSubview:self.voicePlayer.view];
+
+}
+//重置
+-(void)reset {
+    
+    [self.voicePlayer dismiss];
+    [self.voicePlayer.view removeFromSuperview];
+    self.voicePlayer = nil;
+    self.playBtn.hidden = NO;
+}
 @end

@@ -61,7 +61,6 @@
 
 - (void)playVideoWithURL:(NSURL *)url {
     if (!self.videoController) {
-        
         self.videoController = [[KRVideoPlayerController alloc] initWithFrame:self.imageView.bounds];
         __weak typeof(self)weakSelf = self;
         [self.videoController setDimissCompleteBlock:^{

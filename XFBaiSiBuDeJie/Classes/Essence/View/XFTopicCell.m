@@ -39,6 +39,7 @@
     
     [super prepareForReuse];
     [_videoView reset];
+    [_voiceView reset];
 }
 
 + (instancetype)cell

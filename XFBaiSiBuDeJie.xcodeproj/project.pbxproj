@@ -11,6 +11,9 @@
 		650742741C8570720069A37A /* XFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742721C8570720069A37A /* XFCommentViewController.xib */; };
 		650742781C8580BA0069A37A /* XFCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 650742761C8580BA0069A37A /* XFCommentCell.m */; };
 		650742791C8580BA0069A37A /* XFCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742771C8580BA0069A37A /* XFCommentCell.xib */; };
+		6525F1621C9811E1006BCD89 /* XFVociePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */; };
+		6525F1641C9811FC006BCD89 /* XFVociePlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */; };
+		6525F16A1C982E46006BCD89 /* NSString+XFTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F1691C982E46006BCD89 /* NSString+XFTime.m */; };
 		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
 		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
 		65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */; };
@@ -32,6 +35,7 @@
 		65A2AB4F1C8F01BE00BF2B8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2AB481C8EC99F00BF2B8F /* MediaPlayer.framework */; };
 		65A2AB5E1C8FF15700BF2B8F /* KRVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */; };
 		65A2AB5F1C8FF15700BF2B8F /* KRVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2AB5D1C8FF15700BF2B8F /* KRVideoPlayerControlView.m */; };
+		65A2AB611C91A8C700BF2B8F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2AB601C91A8C700BF2B8F /* AudioToolbox.framework */; };
 		65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */; };
 		65AD11731C833C0C00E994F1 /* XFContentVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */; };
 		65AD11761C8362C700E994F1 /* XFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11751C8362C700E994F1 /* XFUserModel.m */; };
@@ -85,6 +89,11 @@
 		650742751C8580BA0069A37A /* XFCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentCell.h; sourceTree = "<group>"; };
 		650742761C8580BA0069A37A /* XFCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentCell.m; sourceTree = "<group>"; };
 		650742771C8580BA0069A37A /* XFCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFCommentCell.xib; sourceTree = "<group>"; };
+		6525F1601C9811E1006BCD89 /* XFVociePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFVociePlayerController.h; path = ../XFVociePlayerController.h; sourceTree = "<group>"; };
+		6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFVociePlayerController.m; path = ../XFVociePlayerController.m; sourceTree = "<group>"; };
+		6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFVociePlayerController.xib; path = ../XFVociePlayerController.xib; sourceTree = "<group>"; };
+		6525F1681C982E46006BCD89 /* NSString+XFTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XFTime.h"; sourceTree = "<group>"; };
+		6525F1691C982E46006BCD89 /* NSString+XFTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XFTime.m"; sourceTree = "<group>"; };
 		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
 		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
 		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
@@ -123,6 +132,7 @@
 		65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerController.m; sourceTree = "<group>"; };
 		65A2AB5C1C8FF15700BF2B8F /* KRVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerControlView.h; sourceTree = "<group>"; };
 		65A2AB5D1C8FF15700BF2B8F /* KRVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerControlView.m; sourceTree = "<group>"; };
+		65A2AB601C91A8C700BF2B8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		65AD116D1C83208300E994F1 /* XFContentVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVoiceView.xib; sourceTree = "<group>"; };
 		65AD11721C833C0C00E994F1 /* XFContentVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFContentVideoView.xib; sourceTree = "<group>"; };
 		65AD11741C8362C700E994F1 /* XFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFUserModel.h; sourceTree = "<group>"; };
@@ -210,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2AB611C91A8C700BF2B8F /* AudioToolbox.framework in Frameworks */,
 				65A2AB4F1C8F01BE00BF2B8F /* MediaPlayer.framework in Frameworks */,
 				65A2AB4E1C8F01B500BF2B8F /* AVFoundation.framework in Frameworks */,
 				9F1B78C58CDAEB38BB9F5CEA /* Pods.framework in Frameworks */,
@@ -250,6 +261,9 @@
 		65A2AB591C8FF15700BF2B8F /* KRVideoPlayerController */ = {
 			isa = PBXGroup;
 			children = (
+				6525F1601C9811E1006BCD89 /* XFVociePlayerController.h */,
+				6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */,
+				6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */,
 				65A2AB5A1C8FF15700BF2B8F /* KRVideoPlayerController.h */,
 				65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */,
 				65A2AB5C1C8FF15700BF2B8F /* KRVideoPlayerControlView.h */,
@@ -415,6 +429,8 @@
 				65FE4B3C1C88850600A4BA45 /* UIImage+XFCircle.m */,
 				65FE4B381C8884B900A4BA45 /* UIImageView+Header.h */,
 				65FE4B391C8884B900A4BA45 /* UIImageView+Header.m */,
+				6525F1681C982E46006BCD89 /* NSString+XFTime.h */,
+				6525F1691C982E46006BCD89 /* NSString+XFTime.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -629,6 +645,7 @@
 		A665137DCAB793132FF0FD7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65A2AB601C91A8C700BF2B8F /* AudioToolbox.framework */,
 				65A2AB4C1C8EE31A00BF2B8F /* CoreMedia.framework */,
 				65A2AB4A1C8EE2FA00BF2B8F /* AVFoundation.framework */,
 				65A2AB481C8EC99F00BF2B8F /* MediaPlayer.framework */,
@@ -709,6 +726,7 @@
 				650742741C8570720069A37A /* XFCommentViewController.xib in Resources */,
 				65AD11BE1C84D32F00E994F1 /* XFPublishView.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
+				6525F1641C9811FC006BCD89 /* XFVociePlayerController.xib in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
 				65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */,
 				65AD11A51C84D1F500E994F1 /* XFLoginViewController.xib in Resources */,
@@ -780,10 +798,12 @@
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
 				650742731C8570720069A37A /* XFCommentViewController.m in Sources */,
 				65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */,
+				6525F1621C9811E1006BCD89 /* XFVociePlayerController.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
 				650742781C8580BA0069A37A /* XFCommentCell.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
 				65FE4B911C89D2FF00A4BA45 /* XFSquareFooterView.m in Sources */,
+				6525F16A1C982E46006BCD89 /* NSString+XFTime.m in Sources */,
 				65A284641C7995BD00D8031B /* XFTalkViewController.m in Sources */,
 				65A284611C79958800D8031B /* XFVideoViewController.m in Sources */,
 				65AD11BF1C84D32F00E994F1 /* XFTabBar.m in Sources */,
@@ -939,6 +959,11 @@
 				INFOPLIST_FILE = XFBaiSiBuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XFBaiSiBuDeJie/Classes/Lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/XFBaiSiBuDeJie/Classes/Lib/VoiceConvert/opencore-amrwb",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.XFBaiSiBuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -955,6 +980,11 @@
 				INFOPLIST_FILE = XFBaiSiBuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XFBaiSiBuDeJie/Classes/Lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/XFBaiSiBuDeJie/Classes/Lib/VoiceConvert/opencore-amrwb",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.XFBaiSiBuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

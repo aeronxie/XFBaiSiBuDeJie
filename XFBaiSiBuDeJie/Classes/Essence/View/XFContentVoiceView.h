@@ -15,5 +15,6 @@
 @property (nonatomic,strong) XFTopicModel *topic;
 
 +(instancetype)voiceView;
+-(void)reset;
 
 @end
