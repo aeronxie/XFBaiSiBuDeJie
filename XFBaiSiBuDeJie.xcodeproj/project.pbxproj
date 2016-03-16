@@ -11,9 +11,10 @@
 		650742741C8570720069A37A /* XFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742721C8570720069A37A /* XFCommentViewController.xib */; };
 		650742781C8580BA0069A37A /* XFCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 650742761C8580BA0069A37A /* XFCommentCell.m */; };
 		650742791C8580BA0069A37A /* XFCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650742771C8580BA0069A37A /* XFCommentCell.xib */; };
-		6525F1621C9811E1006BCD89 /* XFVociePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */; };
-		6525F1641C9811FC006BCD89 /* XFVociePlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */; };
 		6525F16A1C982E46006BCD89 /* NSString+XFTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F1691C982E46006BCD89 /* NSString+XFTime.m */; };
+		6525F16E1C991641006BCD89 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F16D1C991641006BCD89 /* HttpTool.m */; };
+		6525F1721C991650006BCD89 /* XFVociePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525F1701C991650006BCD89 /* XFVociePlayerController.m */; };
+		6525F1731C991650006BCD89 /* XFVociePlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6525F1711C991650006BCD89 /* XFVociePlayerController.xib */; };
 		652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 652CB2701C78E1B20027B71B /* XFGuideView.m */; };
 		652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652CB2721C78E1C00027B71B /* XFGuideView.xib */; };
 		65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65752E2F1C7C9E120005CCB2 /* XFContentPictureView.m */; };
@@ -55,7 +56,6 @@
 		65AD11A51C84D1F500E994F1 /* XFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AD11A31C84D1F500E994F1 /* XFLoginViewController.xib */; };
 		65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11A71C84D23500E994F1 /* XFTextfield.m */; };
 		65AD11AB1C84D26C00E994F1 /* XFShowWordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11AA1C84D26C00E994F1 /* XFShowWordBtn.m */; };
-		65AD11AF1C84D2B300E994F1 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11AE1C84D2B300E994F1 /* HttpTool.m */; };
 		65AD11BB1C84D32F00E994F1 /* XFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B21C84D32F00E994F1 /* XFNavigationController.m */; };
 		65AD11BC1C84D32F00E994F1 /* XFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B41C84D32F00E994F1 /* XFTabBarViewController.m */; };
 		65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AD11B71C84D32F00E994F1 /* XFPublishView.m */; };
@@ -89,11 +89,13 @@
 		650742751C8580BA0069A37A /* XFCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCommentCell.h; sourceTree = "<group>"; };
 		650742761C8580BA0069A37A /* XFCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCommentCell.m; sourceTree = "<group>"; };
 		650742771C8580BA0069A37A /* XFCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFCommentCell.xib; sourceTree = "<group>"; };
-		6525F1601C9811E1006BCD89 /* XFVociePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFVociePlayerController.h; path = ../XFVociePlayerController.h; sourceTree = "<group>"; };
-		6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFVociePlayerController.m; path = ../XFVociePlayerController.m; sourceTree = "<group>"; };
-		6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XFVociePlayerController.xib; path = ../XFVociePlayerController.xib; sourceTree = "<group>"; };
 		6525F1681C982E46006BCD89 /* NSString+XFTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XFTime.h"; sourceTree = "<group>"; };
 		6525F1691C982E46006BCD89 /* NSString+XFTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XFTime.m"; sourceTree = "<group>"; };
+		6525F16C1C991641006BCD89 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		6525F16D1C991641006BCD89 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		6525F16F1C991650006BCD89 /* XFVociePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFVociePlayerController.h; sourceTree = "<group>"; };
+		6525F1701C991650006BCD89 /* XFVociePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVociePlayerController.m; sourceTree = "<group>"; };
+		6525F1711C991650006BCD89 /* XFVociePlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFVociePlayerController.xib; sourceTree = "<group>"; };
 		652CB26F1C78E1B20027B71B /* XFGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFGuideView.h; sourceTree = "<group>"; };
 		652CB2701C78E1B20027B71B /* XFGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFGuideView.m; sourceTree = "<group>"; };
 		652CB2721C78E1C00027B71B /* XFGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFGuideView.xib; sourceTree = "<group>"; };
@@ -164,8 +166,6 @@
 		65AD11A71C84D23500E994F1 /* XFTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextfield.m; sourceTree = "<group>"; };
 		65AD11A91C84D26C00E994F1 /* XFShowWordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFShowWordBtn.h; sourceTree = "<group>"; };
 		65AD11AA1C84D26C00E994F1 /* XFShowWordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFShowWordBtn.m; sourceTree = "<group>"; };
-		65AD11AD1C84D2B300E994F1 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
-		65AD11AE1C84D2B300E994F1 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		65AD11B11C84D32F00E994F1 /* XFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFNavigationController.h; sourceTree = "<group>"; };
 		65AD11B21C84D32F00E994F1 /* XFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFNavigationController.m; sourceTree = "<group>"; };
 		65AD11B31C84D32F00E994F1 /* XFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTabBarViewController.h; sourceTree = "<group>"; };
@@ -239,6 +239,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6525F16B1C991641006BCD89 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6525F16C1C991641006BCD89 /* HttpTool.h */,
+				6525F16D1C991641006BCD89 /* HttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		652CB26D1C78E1830027B71B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,9 +270,9 @@
 		65A2AB591C8FF15700BF2B8F /* KRVideoPlayerController */ = {
 			isa = PBXGroup;
 			children = (
-				6525F1601C9811E1006BCD89 /* XFVociePlayerController.h */,
-				6525F1611C9811E1006BCD89 /* XFVociePlayerController.m */,
-				6525F1631C9811FC006BCD89 /* XFVociePlayerController.xib */,
+				6525F16F1C991650006BCD89 /* XFVociePlayerController.h */,
+				6525F1701C991650006BCD89 /* XFVociePlayerController.m */,
+				6525F1711C991650006BCD89 /* XFVociePlayerController.xib */,
 				65A2AB5A1C8FF15700BF2B8F /* KRVideoPlayerController.h */,
 				65A2AB5B1C8FF15700BF2B8F /* KRVideoPlayerController.m */,
 				65A2AB5C1C8FF15700BF2B8F /* KRVideoPlayerControlView.h */,
@@ -326,9 +335,8 @@
 		65AD11AC1C84D2B300E994F1 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				6525F16B1C991641006BCD89 /* Tool */,
 				65A2AB591C8FF15700BF2B8F /* KRVideoPlayerController */,
-				65AD11AD1C84D2B300E994F1 /* HttpTool.h */,
-				65AD11AE1C84D2B300E994F1 /* HttpTool.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -726,7 +734,7 @@
 				650742741C8570720069A37A /* XFCommentViewController.xib in Resources */,
 				65AD11BE1C84D32F00E994F1 /* XFPublishView.xib in Resources */,
 				65EA759E1C74AB4C0017DB20 /* LaunchScreen.storyboard in Resources */,
-				6525F1641C9811FC006BCD89 /* XFVociePlayerController.xib in Resources */,
+				6525F1731C991650006BCD89 /* XFVociePlayerController.xib in Resources */,
 				652CB2731C78E1C00027B71B /* XFGuideView.xib in Resources */,
 				65AD116E1C83208300E994F1 /* XFContentVoiceView.xib in Resources */,
 				65AD11A51C84D1F500E994F1 /* XFLoginViewController.xib in Resources */,
@@ -798,7 +806,6 @@
 				65EA76191C74C18A0017DB20 /* XFLatestViewController.m in Sources */,
 				650742731C8570720069A37A /* XFCommentViewController.m in Sources */,
 				65AD11A81C84D23500E994F1 /* XFTextfield.m in Sources */,
-				6525F1621C9811E1006BCD89 /* XFVociePlayerController.m in Sources */,
 				65A2846A1C7B2DE500D8031B /* XFModuleDataTool.m in Sources */,
 				650742781C8580BA0069A37A /* XFCommentCell.m in Sources */,
 				652CB2711C78E1B20027B71B /* XFGuideView.m in Sources */,
@@ -817,12 +824,13 @@
 				65EA76181C74C18A0017DB20 /* XFEssenceViewController.m in Sources */,
 				65AD11AB1C84D26C00E994F1 /* XFShowWordBtn.m in Sources */,
 				65AD11791C8362D300E994F1 /* XFCommentModel.m in Sources */,
+				6525F1721C991650006BCD89 /* XFVociePlayerController.m in Sources */,
 				65EA761B1C74C18A0017DB20 /* XFMeViewController.m in Sources */,
 				65FE4B461C896C4500A4BA45 /* XFSquareCell.m in Sources */,
 				65AD11BB1C84D32F00E994F1 /* XFNavigationController.m in Sources */,
-				65AD11AF1C84D2B300E994F1 /* HttpTool.m in Sources */,
 				65FE4B4C1C896D4700A4BA45 /* XFSquareTool.m in Sources */,
 				65752E301C7C9E120005CCB2 /* XFContentPictureView.m in Sources */,
+				6525F16E1C991641006BCD89 /* HttpTool.m in Sources */,
 				65AD11BD1C84D32F00E994F1 /* XFPublishView.m in Sources */,
 				65FE4B4F1C897F1900A4BA45 /* XFSquareButton.m in Sources */,
 				65AD11A01C84D1CB00E994F1 /* XFConcernViewController.m in Sources */,
