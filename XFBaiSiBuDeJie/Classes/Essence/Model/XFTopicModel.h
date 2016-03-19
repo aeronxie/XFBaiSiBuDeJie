@@ -33,7 +33,6 @@
 /** 最热评论(数组放的是Comment模型) */
 @property (nonatomic, strong) XFCommentModel *top_cmt;
 
-/****** 图片相关 ******/
 /** 小图片*/
 @property (nonatomic, copy) NSString *small_image;
 /** 中图片*/
@@ -48,7 +47,7 @@
 /** 视频或图片类型帖子的高度 */
 @property (assign, nonatomic) CGFloat height;
 
-/****** 音频相关 ******/
+
 /** 音频的时长 */
 @property (assign, nonatomic) NSInteger voicetime;
 /** 播放次数 */
@@ -56,7 +55,7 @@
 /** 音频的播放地址 */
 @property (copy, nonatomic) NSString *voiceuri;
 
-/****** 视频相关 ******/
+
 /** 视频的播放地址 */
 @property (copy, nonatomic) NSString *videouri;
 /** 视频的时长 */
