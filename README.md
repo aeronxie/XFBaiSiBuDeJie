@@ -5,6 +5,8 @@
 
 初次学习使用RAC，还不是怎么熟悉，使用的仍是MVC模式，MVVM还在摸索中...
 
+如果大家觉得还不错，请给颗星星支持下~~~
+
 ## 程序中使用到的库
 * `AFNetworking`
 * `SDWebImage`
@@ -32,7 +34,7 @@
 ![](http://7xoijj.com1.z0.glb.clouddn.com/baisi%202.png)
 ![](http://7xoijj.com1.z0.glb.clouddn.com/baisi%203.png)
 
-![](http://7xoijj.com1.z0.glb.clouddn.com/baisi%204.png)
+![](http://7xoijj.com1.z0.glb.clouddn.com/baidi%204.png)
 ![](http://7xoijj.com1.z0.glb.clouddn.com/baisi%205.png)
 
 ![](http://7xoijj.com1.z0.glb.clouddn.com/baisi%206.png)
