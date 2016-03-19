@@ -141,6 +141,12 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"commentClick" object:nil userInfo:dic];
 }
 
+-(void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter]removeObserver:self forKeyPath:@"topicFrame"];
+}
+
+
 #pragma mark - getter and setter
 - (XFContentPictureView *)pictureView
 {

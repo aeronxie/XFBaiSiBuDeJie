@@ -121,7 +121,7 @@ static NSString *const CellID = @"topic";
 
 -(void)dealloc {
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self forKeyPath:@"topicFrame" ];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UITableViewDelegate

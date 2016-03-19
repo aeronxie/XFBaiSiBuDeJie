@@ -38,6 +38,7 @@
     self.playTime.text = [NSString stringWithTime:self.totalTime];
      _player = [[MPMoviePlayerController alloc]initWithContentURL:[NSURL URLWithString:self.url]];
     [self.player play];
+    
 }
 
 //开始播放音乐

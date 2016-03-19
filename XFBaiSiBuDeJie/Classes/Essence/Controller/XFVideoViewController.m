@@ -129,6 +129,10 @@ static NSString *const CellID = @"topic";
     [self.tableView registerNib:[UINib nibWithNibName:@"XFTopicCell" bundle:nil] forCellReuseIdentifier:CellID];
 }
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
