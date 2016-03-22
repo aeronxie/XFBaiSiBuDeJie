@@ -15,7 +15,7 @@
 +(void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(id json))success failure:(void (^)(NSError *error))failure {
     //显示状态栏的网络指示器
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    AFHTTPSessionManager *mgr = [self manager];
     //设置加载时间
     mgr.requestSerializer.timeoutInterval = 10.0f;
     
@@ -32,6 +32,14 @@
         
     }];
     
+}
+
++ (AFHTTPSessionManager *)manager {
+    static AFHTTPSessionManager *manager = nil;
+    if (manager == nil) {
+        manager = [AFHTTPSessionManager manager];
+    }
+    return manager;
 }
 
 @end

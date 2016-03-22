@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface HttpTool : NSObject
-+(void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
++(void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(id json))success
+                                                                 failure:(void (^)(NSError *error))failure;
 
 @end
